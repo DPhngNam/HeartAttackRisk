@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "HeartAttackRiskSSIS", "HeartAttackRiskSSIS\HeartAttackRiskSSIS.dtproj", "{545AF094-5C7D-478B-A625-47737C84AEBB}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "HeartAttackRiskSSAS", "HeartAttackRiskSSAS\HeartAttackRiskSSAS.dwproj", "{9CEA8A72-4A63-409B-BBDD-424D6C2468FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,6 +14,9 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{545AF094-5C7D-478B-A625-47737C84AEBB}.Development|Default.ActiveCfg = Development
 		{545AF094-5C7D-478B-A625-47737C84AEBB}.Development|Default.Build.0 = Development
+		{9CEA8A72-4A63-409B-BBDD-424D6C2468FC}.Development|Default.ActiveCfg = Development
+		{9CEA8A72-4A63-409B-BBDD-424D6C2468FC}.Development|Default.Build.0 = Development
+		{9CEA8A72-4A63-409B-BBDD-424D6C2468FC}.Development|Default.Deploy.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
