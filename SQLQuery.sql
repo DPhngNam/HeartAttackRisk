@@ -1,63 +1,71 @@
---CREATE DATABASE OLAP
---USE OLAP
-
-CREATE TABLE [FACTRaw] (
-    [PatientID] varchar(100),
-    [Age] INT,
-    [Sex] varchar(100),
-    [Cholesterol] INT,
-    [BloodPressure] varchar(100),
-    [HeartRate] varchar(100),
-    [Diabetes] INT,
-    [FamilyHistory] INT,
-    [Smoking] INT,
-    [Obesity] INT,
-    [AlcoholConsumption] INT,
-    [ExerciseHoursPerWeek] DECIMAL(18, 15),
-    [Diet] varchar(100),
-    [PreviousHeartProblems] INT,
-    [MedicationUse] INT,
-    [StressLevel] INT,
-    [SedentaryHoursPerDay] DECIMAL(18, 15),
-    [Income] INT,
-    [BMI] DECIMAL(18, 15),
-    [Triglycerides] INT,
-    [PhysicalActivityDaysPerWeek] INT,
-    [SleepHoursPerDay] INT,
-    [Country] varchar(100),
-    [Continent] varchar(100),
-    [Hemisphere] varchar(100),
-    [HeartAttackRisk] INT
-)
-
-CREATE TABLE [] (
-    [FactID] INT IDENTITY(1,1) PRIMARY KEY,
-
-    [Cholesterol] INT,
-    [BloodPressure] varchar(100),
-    [HeartRate] varchar(100),
-    [Diabetes] INT,
-    [FamilyHistory] INT,
-    [Smoking] INT,
-    [Obesity] INT,
-    [AlcoholConsumption] INT,
-    [ExerciseHoursPerWeek] DECIMAL(18, 15),
-    [Diet] varchar(100),
-    [PreviousHeartProblems] INT,
-    [MedicationUse] INT,
-    [StressLevel] INT,
-    [SedentaryHoursPerDay] DECIMAL(18, 15),
-    [Income] INT,
-    [BMI] DECIMAL(18, 15),
-    [Triglycerides] INT,
-    [PhysicalActivityDaysPerWeek] INT,
-    [SleepHoursPerDay] INT,
-    [HeartAttackRisk] INT,
-
-	[PatientID] varchar(100) FOREIGN KEY REFERENCES DIMPatient([PatientID]),
-	[GeoID] int FOREIGN KEY REFERENCES DIMGeography([GeoID]),
-)
-
-DELETE FROM DIMGeography;
-DELETE FROM DIMPatient;
-DELETE FROM FACTRaw;
+CREATE TABLE Geo (
+	GeoID INT IDENTITY(1,1) PRIMARY KEY,
+	Country VARCHAR(100),
+	Continent VARCHAR(100),
+	Hemisphere VARCHAR(100)
+);
+CREATE TABLE Patient (
+    PatientID VARCHAR(100) PRIMARY KEY,
+    Age INT NOT NULL,
+    Sex VARCHAR(100) NOT NULL,
+	Income BIGINT NOT NULL,
+	PreviousHeartProblems BIT NOT NULL,
+	FamilyHistory BIT NOT NULL,
+	Obesity BIT NOT NULL,
+);
+CREATE TABLE Lifestyle (
+	PatientID VARCHAR(100) PRIMARY KEY,
+	Smoking BIT NOT NULL,
+	AlcoholConsumption BIT NOT NULL,
+	ExerciseHoursPerWeek FLOAT NOT NULL,
+    Diet VARCHAR(100) NOT NULL,
+    MedicationUse BIT NOT NULL,
+	PhysicalActivityDaysPerWeek INT NOT NULL,
+	SedentaryHoursPerDay FLOAT NOT NULL,
+	SleepHoursPerDay INT NOT NULL,
+	FOREIGN KEY (PatientID) REFERENCES Patient(PatientID),
+);
+CREATE TABLE Fact_Health (
+    FactID INT IDENTITY(1,1) PRIMARY KEY,
+    PatientID VARCHAR(100) NOT NULL,
+    GeoID INT NOT NULL,
+	SystolicPressure INT NOT NULL,
+	DiastolicPressure INT NOT NULL,
+    Cholesterol INT NOT NULL,
+    HeartRate INT NOT NULL,
+    BMI FLOAT NOT NULL,
+    Triglycerides INT NOT NULL,
+	StressLevel INT NOT NULL,
+    HeartAttackRisk BIT NOT NULL,
+    FOREIGN KEY (PatientID) REFERENCES Patient(PatientID),
+    FOREIGN KEY (GeoID) REFERENCES Geo(GeoID),
+);
+CREATE TABLE RawData (
+    PatientID VARCHAR(100) PRIMARY KEY,
+    Age INT NOT NULL,
+    Sex VARCHAR(100) NOT NULL,
+    Cholesterol INT NOT NULL,
+    HeartRate INT NOT NULL,
+    Diabetes BIT NOT NULL,
+    FamilyHistory BIT NOT NULL,
+    Smoking BIT NOT NULL,
+    Obesity BIT NOT NULL,
+    AlcoholConsumption BIT NOT NULL,
+    ExerciseHoursPerWeek FLOAT NOT NULL,
+    Diet VARCHAR(100) NOT NULL,
+	PreviousHeartProblems BIT NOT NULL,
+    MedicationUse BIT NOT NULL,
+    PhysicalActivityDaysPerWeek INT NOT NULL,
+    SedentaryHoursPerDay FLOAT NOT NULL,
+    SleepHoursPerDay INT NOT NULL,
+    Country VARCHAR(100) NOT NULL,
+    Continent VARCHAR(100) NOT NULL,
+    Hemisphere VARCHAR(100) NOT NULL,
+    SystolicPressure INT NOT NULL,
+    DiastolicPressure INT NOT NULL,
+    BMI FLOAT NOT NULL,
+	Income BIGINT NOT NULL,
+    Triglycerides INT NOT NULL,
+    StressLevel INT NOT NULL,
+    HeartAttackRisk BIT NOT NULL,
+);

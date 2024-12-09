@@ -6,40 +6,12 @@
     <Name>HeartAttackRiskSSAS.database</Name>
     <FullPath>HeartAttackRiskSSAS.database</FullPath>
   </Database>
-  <Cubes>
-    <ProjectItem>
-      <Name>OLAP.cube</Name>
-      <FullPath>OLAP.cube</FullPath>
-      <Dependencies>
-        <ProjectItem>
-          <Name>OLAP.partitions</Name>
-          <FullPath>OLAP.partitions</FullPath>
-        </ProjectItem>
-      </Dependencies>
-    </ProjectItem>
-  </Cubes>
-  <Dimensions>
-    <ProjectItem>
-      <Name>DIM Patient.dim</Name>
-      <FullPath>DIM Patient.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DIM Geography.dim</Name>
-      <FullPath>DIM Geography.dim</FullPath>
-    </ProjectItem>
-  </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>OLAP.ds</Name>
       <FullPath>OLAP.ds</FullPath>
     </ProjectItem>
   </DataSources>
-  <DataSourceViews>
-    <ProjectItem>
-      <Name>OLAP.dsv</Name>
-      <FullPath>OLAP.dsv</FullPath>
-    </ProjectItem>
-  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
