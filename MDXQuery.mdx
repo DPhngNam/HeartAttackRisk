@@ -11,10 +11,15 @@ FROM
     [OLAP]
 WHERE 
     [Geo].[Continent].[Asia];
---3
+--3.Slice Query
+SELECT 
+    [Geo].[Continent].Members ON ROWS, 
+    {[Measures].[StressLevel], [Measures].[SleepHoursPerDay]} ON COLUMNS
+FROM 
+    [OLAP];
 
-//4.Dice Query 
 
+--4.Dice Query 
 
 
 //5.Pivot Query
@@ -64,3 +69,32 @@ FROM
     [OLAP]
 WHERE 
     [Geo].[Continent].[Asia];
+
+-- 7. HeartAttackRisks & Family History
+SELECT 
+    [Patient].[Family History].Members ON ROWS, 
+    [Measures].[Heart Attack Risk Count] ON COLUMNS
+FROM 
+    [OLAP]
+-- 8.
+SELECT 
+    [Patient].[Diabetes].Members ON ROWS, 
+    [Measures].[Heart Attack Risk Count] ON COLUMNS
+FROM 
+    [OLAP]
+--9.
+SELECT 
+    [Fact Health].[Stress Level].Members ON COLUMNS, 
+    [Patient].[Sex].Members 
+	having (
+		[Measures].[Stress Level] = 1
+	) ON ROWS
+FROM 
+    [OLAP]
+
+--10.
+SELECT 
+    [Measures].[Heart Attack Risk Count] on rows,
+	[Fact Health].[Sleep Hours Per Day].Members on columns
+FROM 
+    [OLAP]
