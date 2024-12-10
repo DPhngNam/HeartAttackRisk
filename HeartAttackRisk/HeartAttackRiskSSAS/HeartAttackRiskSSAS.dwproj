@@ -31,10 +31,6 @@
       <Name>Fact Health.dim</Name>
       <FullPath>Fact Health.dim</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Lifestyle.dim</Name>
-      <FullPath>Lifestyle.dim</FullPath>
-    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

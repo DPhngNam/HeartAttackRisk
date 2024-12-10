@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="56"
-  DTS:VersionGUID="{96E83825-E3B2-4768-9F09-63B9BDC4C05F}">
+  DTS:VersionBuild="58"
+  DTS:VersionGUID="{DF195944-CB30-409F-BA94-88C4668C6DD0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -42,7 +42,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Projects\HeartAttackRisk\heart_attack_prediction_dataset_modified.csv">
+          DTS:ConnectionString="D:\Projects\HeartAttackRisk\Dataset\heart_attack_prediction_dataset_modified.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -51,7 +51,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PatientID"
-              DTS:DTSID="{0ECB5EAF-71D5-4392-A5B9-D630EDAAACB2}"
+              DTS:DTSID="{900A150C-AD21-4FF2-9CED-BB7421C6FB68}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -60,7 +60,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age"
-              DTS:DTSID="{FB189919-2E94-4854-9F8B-43D9A814A323}"
+              DTS:DTSID="{70B55D1C-8B56-4754-B68A-C2B5DFE17C65}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -69,7 +69,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Sex"
-              DTS:DTSID="{64223582-A15C-4B22-83F6-7B6435212276}"
+              DTS:DTSID="{DAEA53AB-C5AE-46D8-8088-38A42FF4C90D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -78,7 +78,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Cholesterol"
-              DTS:DTSID="{73287A3B-0548-407D-9240-CE818D9422AD}"
+              DTS:DTSID="{8A87F197-DEF1-46A9-9981-F289D52854EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -87,7 +87,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="HeartRate"
-              DTS:DTSID="{9188BEBE-3CF1-4229-B994-6D716260CAF2}"
+              DTS:DTSID="{12BE05F9-F430-4EF9-99C1-5F535E839FFF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -96,7 +96,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Diabetes"
-              DTS:DTSID="{F3320ACB-C202-47EA-8CDC-63B556E21ABE}"
+              DTS:DTSID="{DE873E05-7C36-485C-86BB-5B3706C1FA7E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -105,7 +105,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FamilyHistory"
-              DTS:DTSID="{915BE3A7-D593-4C35-B7B6-06D4243E76CA}"
+              DTS:DTSID="{15C56345-5B22-40FF-9526-B461E2903D34}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -114,7 +114,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Smoking"
-              DTS:DTSID="{5163EF66-C8DF-40F5-9C3A-03048FCA8404}"
+              DTS:DTSID="{3A81C4DC-87CE-4849-9000-87B6825F5BA3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +123,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Obesity"
-              DTS:DTSID="{E70CFFD2-903C-40B0-8D4E-9C1A4B8A8E2A}"
+              DTS:DTSID="{034D808F-29F5-4396-821C-65AA2CE64DF5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -132,7 +132,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="AlcoholConsumption"
-              DTS:DTSID="{FFCEAA0A-239D-455F-893D-76912ABB3BD8}"
+              DTS:DTSID="{80AA818F-3466-4161-B264-0956C48B16A2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -141,7 +141,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ExerciseHoursPerWeek"
-              DTS:DTSID="{5DA1B787-A7B1-43B4-A301-880ADB5D4043}"
+              DTS:DTSID="{36AE6499-F666-472A-8DEB-A9E2D4E83601}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -150,7 +150,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Diet"
-              DTS:DTSID="{764ABD45-79DB-49EB-A3A6-01EADE4E5308}"
+              DTS:DTSID="{78E5D4FD-A0A4-45FD-8DE8-B425C9B76627}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -159,7 +159,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PreviousHeartProblems"
-              DTS:DTSID="{E8744F16-C030-4CC2-AB16-5C49343EF864}"
+              DTS:DTSID="{61BAB8C0-37A7-4AA9-A884-A33FABBFC46C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -168,7 +168,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MedicationUse"
-              DTS:DTSID="{9FBEFDB7-AF1C-4C64-A82E-25E89FDEF13A}"
+              DTS:DTSID="{538E89E0-3F4C-4048-A919-44C63CA42191}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -177,7 +177,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StressLevel"
-              DTS:DTSID="{F728CB8F-AA37-4690-9859-C9B9AAFC2597}"
+              DTS:DTSID="{B25C6667-2E04-48AD-A59B-17041AEC3F1B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -186,7 +186,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Sedentary Hours Per Day"
-              DTS:DTSID="{A94C29D6-771F-4315-9DB3-C5D7DF6CE37D}"
+              DTS:DTSID="{C25B35CC-970C-49CA-A2E1-9C3074101454}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -195,7 +195,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Income"
-              DTS:DTSID="{93F6C109-F517-495C-82FF-4EE99D381707}"
+              DTS:DTSID="{A01EB82E-23CA-4CAD-9ECD-79BA7593F1D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -204,7 +204,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="BMI"
-              DTS:DTSID="{B15E1257-3A1D-46B1-9952-13C13932B9F7}"
+              DTS:DTSID="{30EB5298-1D9F-4C15-BF89-3FDF18B41EEC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -213,7 +213,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Triglycerides"
-              DTS:DTSID="{94CD1EBF-2BBB-418C-B6E7-345D2D5AAF1E}"
+              DTS:DTSID="{C7748EB5-B6ED-4B5F-8B64-887B31371443}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -222,7 +222,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PhysicalActivityDaysPerWeek"
-              DTS:DTSID="{15FF98AC-1D1A-4FF6-A9C4-A59BD7345F3A}"
+              DTS:DTSID="{44E5B239-3DE3-45EE-A1A5-E27D47E4A629}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -231,7 +231,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SleepHoursPerDay"
-              DTS:DTSID="{6F550FAD-A0B2-497D-BF23-94D70EFCDE8B}"
+              DTS:DTSID="{2F688E56-B850-4E11-A26B-3550AFCD23D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -240,7 +240,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{091A483B-6F13-47D4-A6C1-9794EF4E608F}"
+              DTS:DTSID="{77077F3B-AD5C-49CC-857F-F331BF3B3A26}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -249,7 +249,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Continent"
-              DTS:DTSID="{D7A0B09C-E4BF-46ED-8ADE-CA97106D9515}"
+              DTS:DTSID="{CA5F0C66-CE50-47BC-AE31-9D1692AE9FA2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -258,7 +258,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Hemisphere"
-              DTS:DTSID="{33BDE458-8414-4D95-BC4D-A2E0CB230DDD}"
+              DTS:DTSID="{111A226C-E106-41D4-A118-FD8E4BC7D97A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -267,7 +267,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="HeartAttackRisk"
-              DTS:DTSID="{3944F24D-FB93-4309-8EDF-49D088156912}"
+              DTS:DTSID="{891AEB88-73E2-4B2B-B279-B425BB027D1C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -276,7 +276,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SystolicPressure"
-              DTS:DTSID="{7B220D97-0B91-4DF3-92C1-D654DF983389}"
+              DTS:DTSID="{DA52D69E-48E1-423A-8B38-2316C4CEC75B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -285,7 +285,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DiastolicPressure"
-              DTS:DTSID="{4D512F9E-C30B-4409-ACEB-D2D8E4DEED26}"
+              DTS:DTSID="{57772295-88C3-42D9-B22B-CCC2B3752584}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -4206,6 +4206,34 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                           cachedSortKeyPosition="9"
                           externalMetadataColumnId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GeoID]"
                           lineageId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[GeoID]" />
+                        <inputColumn
+                          refId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ExerciseHoursPerWeek]"
+                          cachedDataType="r8"
+                          cachedName="ExerciseHoursPerWeek"
+                          cachedSortKeyPosition="14"
+                          externalMetadataColumnId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExerciseHoursPerWeek]"
+                          lineageId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[ExerciseHoursPerWeek]" />
+                        <inputColumn
+                          refId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PhysicalActivityDaysPerWeek]"
+                          cachedDataType="i4"
+                          cachedName="PhysicalActivityDaysPerWeek"
+                          cachedSortKeyPosition="11"
+                          externalMetadataColumnId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PhysicalActivityDaysPerWeek]"
+                          lineageId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[PhysicalActivityDaysPerWeek]" />
+                        <inputColumn
+                          refId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SedentaryHoursPerDay]"
+                          cachedDataType="r8"
+                          cachedName="SedentaryHoursPerDay"
+                          cachedSortKeyPosition="12"
+                          externalMetadataColumnId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SedentaryHoursPerDay]"
+                          lineageId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[SedentaryHoursPerDay]" />
+                        <inputColumn
+                          refId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SleepHoursPerDay]"
+                          cachedDataType="i4"
+                          cachedName="SleepHoursPerDay"
+                          cachedSortKeyPosition="13"
+                          externalMetadataColumnId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SleepHoursPerDay]"
+                          lineageId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[SleepHoursPerDay]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -7314,7 +7342,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
     design-time-name="Package\CREATE DIMs\DIM_Geography">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\CREATE DIMs\DIM_Geography\OLE DB Source"
@@ -7346,7 +7374,9 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7380,7 +7410,9 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7418,10 +7450,6 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\CREATE DIMs\DIM_Patient\OLE DB Source"
-          TopLeft="137.857143150605,192.705882184027" />
-        <NodeLayout
           Size="97.6,41.6"
           Id="Package\CREATE DIMs\DIM_Patient\Sort"
           TopLeft="430.714286631163,196.52941159244" />
@@ -7429,28 +7457,10 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
           Size="170.4,41.6"
           Id="Package\CREATE DIMs\DIM_Patient\OLE DB Destination"
           TopLeft="621.42857275143,195.764705710758" />
-        <EdgeLayout
-          Id="Package\CREATE DIMs\DIM_Patient.Paths[Sort Output]"
-          TopLeft="528.314286631163,216.947058651599">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="93.1142861202663,0"
-              Start="0,0"
-              End="85.6142861202663,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="85.6142861202663,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\CREATE DIMs\DIM_Patient\OLE DB Source"
+          TopLeft="137.857143150605,192.705882184027" />
         <EdgeLayout
           Id="Package\CREATE DIMs\DIM_Patient.Paths[OLE DB Source Output]"
           TopLeft="287.457143150605,215.417646888234">
@@ -7473,11 +7483,33 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CREATE DIMs\DIM_Patient.Paths[Sort Output]"
+          TopLeft="528.314286631163,216.947058651599">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="93.1142861202663,0"
+              Start="0,0"
+              End="85.6142861202663,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="85.6142861202663,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\CREATE DIMs\DIM_Patient\OLE DB Source">
+    design-time-name="Package\CREATE DIMs\DIM_Patient\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7490,7 +7522,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\CREATE DIMs\DIM_Patient\OLE DB Destination">
+    design-time-name="Package\CREATE DIMs\DIM_Patient\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7516,41 +7548,17 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
           Id="Package\CREATE FACT\Fact_Health\Lookup 1"
           TopLeft="700.999989554286,320.999995216727" />
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\CREATE FACT\Fact_Health\OLE DB Destination"
-          TopLeft="339.999994933605,474.999992921949" />
-        <NodeLayout
           Size="97.6,41.6"
           Id="Package\CREATE FACT\Fact_Health\Sort"
           TopLeft="662.99999012053,473.99999293685" />
         <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\CREATE FACT\Fact_Health\OLE DB Destination"
+          TopLeft="339.999994933605,474.999992921949" />
+        <NodeLayout
           Size="112.8,41.6"
           Id="Package\CREATE FACT\Fact_Health\Lookup"
           TopLeft="430.9999935776,316.999995276332" />
-        <EdgeLayout
-          Id="Package\CREATE FACT\Fact_Health.Paths[Lookup Match Output]"
-          TopLeft="543.7999935776,339.79999524653">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="157.199995976686,0"
-              Start="0,0"
-              End="149.699995976686,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="149.699995976686,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="26.658611269593,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\CREATE FACT\Fact_Health.Paths[Sort Output]"
           TopLeft="662.99999012053,495.299992929399">
@@ -7631,6 +7639,30 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CREATE FACT\Fact_Health.Paths[Lookup Match Output]"
+          TopLeft="543.7999935776,339.79999524653">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="157.199995976686,0"
+              Start="0,0"
+              End="149.699995976686,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="149.699995976686,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="26.658611269593,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -7640,7 +7672,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7650,7 +7682,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7676,7 +7708,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7686,7 +7718,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
