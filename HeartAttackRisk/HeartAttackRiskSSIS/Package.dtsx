@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="58"
-  DTS:VersionGUID="{DF195944-CB30-409F-BA94-88C4668C6DD0}">
+  DTS:VersionBuild="59"
+  DTS:VersionGUID="{15CB704E-ADA1-4174-A61D-BAC3501D9460}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -7540,6 +7540,10 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\CREATE FACT\Fact_Health\Sort"
+          TopLeft="662.99999012053,473.99999293685" />
+        <NodeLayout
           Size="149.6,41.6"
           Id="Package\CREATE FACT\Fact_Health\OLE DB Source"
           TopLeft="132.999998018146,308.999995395541" />
@@ -7547,10 +7551,6 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
           Size="121.6,41.6"
           Id="Package\CREATE FACT\Fact_Health\Lookup 1"
           TopLeft="700.999989554286,320.999995216727" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\CREATE FACT\Fact_Health\Sort"
-          TopLeft="662.99999012053,473.99999293685" />
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\CREATE FACT\Fact_Health\OLE DB Destination"
@@ -7703,6 +7703,19 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\CREATE FACT\Fact_Health\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\CREATE FACT\Fact_Health\Lookup">
     <Properties>
       <Property>
@@ -7722,19 +7735,6 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CREATE FACT\Fact_Health\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

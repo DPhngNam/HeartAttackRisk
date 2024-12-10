@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="57dab06c-cdd9-4744-91df-301ca1468553" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ccdb5d12-f25e-4a7b-a2ac-46e510f06b96" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>OLAP</ID>
   <Name>OLAP</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8031" scrolltop="-4" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="87" x="23516" y="11240" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4876" scrolltop="-767" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="21442" y="11240" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
             </font>
@@ -30,7 +30,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Patient" left="412" top="7400" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4233" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Patient" left="7437" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4233" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e00008910000088130000" />
             </control>
@@ -41,7 +41,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Geo" left="7437" top="1346" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Geo" left="1028" top="7400" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
             </control>
@@ -52,7 +52,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2129" top="4700" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4737" top="2101" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -60,17 +60,17 @@
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[FK__Fact_Heal__Patie__2AD55B43]" vartype="8" />
+                <property name="LogicalObject" value="dataSet.Relations[FK__Fact_Heal__Patie__3552E9B6]" vartype="8" />
                 <property name="Virtual" value="0" vartype="11" />
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="6" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="2528" y="7400" />
-              <point x="2528" y="5000" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="22" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7437" y="2500" />
+              <point x="5037" y="2500" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4737" top="2100" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2129" top="4700" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -78,16 +78,14 @@
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[FK__Fact_Heal__GeoID__2BC97F7C]" vartype="8" />
+                <property name="LogicalObject" value="dataSet.Relations[FK__Fact_Heal__GeoID__36470DEF]" vartype="8" />
                 <property name="Virtual" value="0" vartype="11" />
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="12" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="7437" y="2499" />
-              <point x="6237" y="2499" />
-              <point x="6237" y="2500" />
-              <point x="5037" y="2500" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2528" y="7400" />
+              <point x="2528" y="5000" />
             </connector>
           </ddscontrol>
         </dds>
@@ -107,11 +105,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-8031</Value>
+      <Value>-4876</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-4</Value>
+      <Value>-767</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -123,129 +121,129 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-      <Value>87</Value>
+      <Value>100</Value>
     </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="a77102c3-7c19-4769-8656-eac47cd43c88">
+    <Dimension dwd:design-time-name="336110fd-7dbc-4d23-af82-7b4566cb2a37">
       <ID>Fact Health</ID>
       <Name>Fact Health</Name>
       <DimensionID>Fact Health</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="aa06c72d-f301-448b-b7e7-070f447c45b4">
+        <Attribute dwd:design-time-name="cfa882a2-c42c-4139-a1e9-677574b2cb9c">
           <AttributeID>Fact ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="05aade94-55cf-43a7-b0b7-af4b2df0264f">
+        <Attribute dwd:design-time-name="8cb05455-dad7-4634-b9a5-22335f6e5207">
           <AttributeID>Patient ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="98db08e1-cc9f-40f0-a9b2-41e13111fe74">
+        <Attribute dwd:design-time-name="12310e9d-7317-4b1b-adb6-8a1b3a46a390">
           <AttributeID>Geo ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="88ea1b1c-73f4-4836-bee3-f361612f4668">
+        <Attribute dwd:design-time-name="9d276772-5d8d-4706-b339-31d2b2b15df0">
           <AttributeID>Systolic Pressure</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="8d4f614d-a1ad-4793-9ed7-0426b04178e4">
+        <Attribute dwd:design-time-name="b9ee510b-7dfd-4122-9c3c-c7e32fe410cd">
           <AttributeID>Diastolic Pressure</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="e416b8e9-d6f3-42b1-aaf3-e8702bf47d00">
+        <Attribute dwd:design-time-name="24ce4c39-a4cf-4053-8038-270f54f28a16">
           <AttributeID>Cholesterol</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="fe4d3f36-bf3b-4776-b33e-315219a83eb8">
+        <Attribute dwd:design-time-name="030d75de-9318-4f8d-a9cd-0f698e0b67b5">
           <AttributeID>Heart Rate</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="27179bba-f92f-4cc8-91c1-6cec69f08081">
+        <Attribute dwd:design-time-name="b1934207-0a3a-4131-81d7-356b3a6d16b0">
           <AttributeID>BMI</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="1e3bd9be-b46c-4d9b-9cbe-6ecde85a3ea0">
+        <Attribute dwd:design-time-name="500f8566-61f6-4e0f-b8e3-1361cca63afb">
           <AttributeID>Triglycerides</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="0d9f77c6-24d7-4738-a43b-8eb53bce863e">
+        <Attribute dwd:design-time-name="0c4c0b57-b8b5-4707-9e2c-2264f4c3dd15">
           <AttributeID>Stress Level</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a51be52d-f916-4bd6-bf20-8dfc3d9d5bd2">
+        <Attribute dwd:design-time-name="10dcf75a-f1e1-4d15-b872-f7ba9d393511">
           <AttributeID>Heart Attack Risk</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="66e216e2-a43f-4437-813c-c845e22d93d5">
+        <Attribute dwd:design-time-name="bdf6cb29-2b2a-473b-b613-05685a9a1641">
           <AttributeID>Exercise Hours Per Week</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="57dd62db-14d4-4342-be16-e2411e7f6105">
+        <Attribute dwd:design-time-name="eb7a39c5-ddd9-40cb-9eab-1831f1eb7ac2">
           <AttributeID>Physical Activity Days Per Week</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="c488ff94-ae5b-45b1-bc5f-9af8e2183250">
+        <Attribute dwd:design-time-name="e28b235e-059b-4fe0-ac28-532d29d3ec35">
           <AttributeID>Sedentary Hours Per Day</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="51187697-10a9-4072-a7d9-ab6bf947d55e">
+        <Attribute dwd:design-time-name="37898618-9f95-4263-8d30-fa339135db27">
           <AttributeID>Sleep Hours Per Day</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="74bb5bbb-2ae1-44ca-916d-6e87479b4f22">
+    <Dimension dwd:design-time-name="e9ed3278-4212-4ab2-8b92-228115244153">
       <ID>Patient</ID>
       <Name>Patient</Name>
       <DimensionID>Patient</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="ee4e4469-5e36-46c0-8a00-96e8b7f6647e">
+        <Attribute dwd:design-time-name="df910f31-b89d-439a-808f-eb80cb88ae80">
           <AttributeID>Patient ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d80dc75f-aec2-4e6c-b7d0-b2cd5c0ee9a6">
+        <Attribute dwd:design-time-name="915eb772-8cef-499e-a39e-5f4d905d6415">
           <AttributeID>Age</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="06fea750-5dfa-4bf0-b090-68d5251dbc48">
+        <Attribute dwd:design-time-name="91edbbd9-87f2-46ae-aa1f-ea9b907a8e22">
           <AttributeID>Sex</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="26a2c86e-53df-456c-a5f3-2013154be370">
+        <Attribute dwd:design-time-name="ea0fdcd5-b045-4f60-9809-bad5a01ab24c">
           <AttributeID>Income</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4d557506-9e66-45c6-94a0-67b33859e503">
+        <Attribute dwd:design-time-name="6be10e2d-4384-4966-8ff2-98a6348feb46">
           <AttributeID>Previous Heart Problems</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4e0c93da-4f23-4685-b631-ec602289bacb">
+        <Attribute dwd:design-time-name="dced5731-1d74-4607-8dcf-352fdbd5b964">
           <AttributeID>Family History</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="97e62023-9239-40a7-a6d0-7e939529e34b">
+        <Attribute dwd:design-time-name="d47b83fa-40c0-4c39-af5c-07840b6ab058">
           <AttributeID>Obesity</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6096d3ec-c6e2-41dc-943f-17c5c45820a8">
+        <Attribute dwd:design-time-name="f2ebca2c-e932-414d-963b-ba0cb1c522e0">
           <AttributeID>Diet</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ac271b85-030a-440f-a8b9-5a23f54e4a0e">
+        <Attribute dwd:design-time-name="047f0e21-49ea-44b8-a39e-7c03847f0e61">
           <AttributeID>Medication Use</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="83d424f3-b839-4e9c-8bae-632afe4bd353">
+        <Attribute dwd:design-time-name="429dd9b9-ec9b-4ff0-a661-f7f187dcd9e8">
           <AttributeID>Smoking</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="3cfa4433-b4d4-488f-9762-7f3e241a39f1">
+        <Attribute dwd:design-time-name="d90520a7-4633-49e0-8e41-8679f3f70595">
           <AttributeID>Alcohol Consumption</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="02cfb464-3bba-4369-b27a-beb7444b04a3">
+        <Attribute dwd:design-time-name="a620f1ba-76d9-45d5-831e-20ecd860f0e1">
           <AttributeID>Diabetes</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="e914b77a-dc49-47da-a758-798b91048c83">
+    <Dimension dwd:design-time-name="636289a5-71ce-4acc-bd28-c612352997dc">
       <ID>Geo</ID>
       <Name>Geo</Name>
       <DimensionID>Geo</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="b55fc252-5a94-4331-95bf-416e63dcbca1">
+        <Attribute dwd:design-time-name="eb6929b3-e4cf-4363-ae34-7c80d9f04079">
           <AttributeID>Geo ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6cc965f8-e5fb-4218-a9dd-114e626743bb">
+        <Attribute dwd:design-time-name="2edd6afc-62cd-4a21-b7d0-f165ad2a9f56">
           <AttributeID>Country</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f985702a-aa1d-4fd3-9878-495fc528d55c">
+        <Attribute dwd:design-time-name="d267fca1-9fe0-4d0b-abed-123a122d2511">
           <AttributeID>Continent</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="3c345b5e-63db-43cd-bc30-4af0181568e9">
+        <Attribute dwd:design-time-name="ca2d3120-cbc6-43bf-b30f-8440f96519f5">
           <AttributeID>Hemisphere</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="b3fa40e4-3994-4c5e-9c3f-d7d8e6d9a727">
+    <MeasureGroup dwd:design-time-name="8ad9da7f-781b-43a3-afad-6ff1cf154e57">
       <ID>Fact Health</ID>
       <Name>Fact Health</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -253,201 +251,175 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="955622c8-5a09-4712-b0ad-67af10f74730">
+        <Measure dwd:design-time-name="aa778df6-251c-4a16-94c8-7b568f8f3db7">
           <ID>Systolic Pressure</ID>
           <Name>Systolic Pressure</Name>
-          <Source dwd:design-time-name="81d6a38d-dbe5-4acd-9995-9da4948db18f">
+          <Source dwd:design-time-name="e8ffc9a9-15a3-4451-ab46-2a86ee2e7262">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="00d30ed4-8c9d-42ca-8e9a-062b27fe5569">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="20d95ef7-c634-4d21-ba5d-1635fca298c5">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>SystolicPressure</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="ab17980a-b918-4a78-81b4-367346ae698d">
+        <Measure dwd:design-time-name="cdfcd168-b7d4-47cc-b4e5-cab7a7e2b1c3">
           <ID>Diastolic Pressure</ID>
           <Name>Diastolic Pressure</Name>
-          <Source dwd:design-time-name="866c290c-0138-4215-8072-df1c081601d6">
+          <Source dwd:design-time-name="b088a209-df5a-4c52-81c0-c300f5f67fdf">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="967c8663-7fa1-416a-bf10-d135b3ef980a">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8aa90315-9a6b-4d2c-9dae-dac85452a690">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>DiastolicPressure</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="f7c37210-2de9-431a-86cc-a43464d4b850">
+        <Measure dwd:design-time-name="f07e4347-a3eb-4880-8b3c-0cc3ab7593a8">
           <ID>Cholesterol</ID>
           <Name>Cholesterol</Name>
-          <Source dwd:design-time-name="9f8e7584-d483-486d-b81a-f90b2fca9aa0">
+          <Source dwd:design-time-name="fb187859-839b-4979-af95-f69a7013deab">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="68703164-90fd-40b2-aae1-86846c51536b">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3e3a5a51-1cb1-4b69-9b2b-e55322d2928d">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>Cholesterol</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="b53e39f8-76b2-4b1c-816c-a1370b7a5d0d">
+        <Measure dwd:design-time-name="07461a29-539d-4d77-a79a-dfdf6846fe52">
           <ID>Heart Rate</ID>
           <Name>Heart Rate</Name>
-          <Source dwd:design-time-name="d34e892c-0c33-41cb-983a-d40973bda323">
+          <Source dwd:design-time-name="1e6b2624-5e5a-4348-9f39-e291d98fde64">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="6356d90f-edbe-416e-9cd1-183d422547e1">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="93c0d376-6a40-41f1-a904-a5071bb97a90">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>HeartRate</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="ac6efccd-d4dd-4f3d-aa6f-0ae816e82c3c">
+        <Measure dwd:design-time-name="ede36356-c37f-42ff-ba50-d56c42bcb94c">
           <ID>BMI</ID>
           <Name>BMI</Name>
-          <Source dwd:design-time-name="ab2d05be-6518-4e74-8f5f-cba3deb1642e">
+          <Source dwd:design-time-name="7430497f-d9c2-4b3e-bd64-d3acbda86952">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="bcceb1c8-8294-4a73-8187-877373f94b7e">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5341d151-ab33-4515-9239-8f2fe300d1d6">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>BMI</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="f2890271-3f11-4c1d-977f-da7528074626">
+        <Measure dwd:design-time-name="0eca6c0f-bfc6-4718-84d2-2d6f1f56f90f">
           <ID>Triglycerides</ID>
           <Name>Triglycerides</Name>
-          <Source dwd:design-time-name="84e5bcc3-1897-46fb-b977-1387e2405655">
+          <Source dwd:design-time-name="e596cd6e-630b-47f2-b6e6-2d33e50a759d">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="6ccf1461-6c43-4495-b4f5-7466b6e692fa">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6ac26379-62e9-4bff-ba31-b4c0a7148fb7">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>Triglycerides</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="9e54ad9e-433a-4f50-a24b-2b2ff96ff77d">
+        <Measure dwd:design-time-name="767bd153-eb45-436d-a41f-3d29acba7bdd">
           <ID>Stress Level</ID>
           <Name>Stress Level</Name>
-          <Source dwd:design-time-name="dcde0172-0613-4e30-a68b-90e7464dc01c">
+          <Source dwd:design-time-name="921a8773-3604-4912-bcb2-3cf764201115">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="e8ec0e4a-528d-45bb-a500-7f4bf9f98210">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="20bd9b63-d253-41ea-a604-4ee07e413110">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>StressLevel</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="a3282a82-2fb3-4949-a119-96b18cc1237e">
+        <Measure dwd:design-time-name="acfb9612-b57d-45d2-a553-c3b464b8a6d0">
           <ID>Exercise Hours Per Week</ID>
           <Name>Exercise Hours Per Week</Name>
-          <Source dwd:design-time-name="3d8c96d7-9406-4c52-ab7a-1822a12f18f5">
+          <Source dwd:design-time-name="9f64d032-30a8-4ce5-ba3b-6fb450a5227d">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="bc0385f4-8354-44a1-806d-4dd74655be53">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6e7920ad-73db-484e-881b-d35df177b394">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>ExerciseHoursPerWeek</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="3631528c-0e54-444e-8440-6bcd4d3de0a2">
+        <Measure dwd:design-time-name="a9517b99-df57-4d00-a608-eb7a43ffc006">
           <ID>Physical Activity Days Per Week</ID>
           <Name>Physical Activity Days Per Week</Name>
-          <Source dwd:design-time-name="0a3ab8f9-5aa7-4abd-87ae-b4fa686e75d9">
+          <Source dwd:design-time-name="0abceb1e-f05c-4269-b4d4-e4c737ae3c2d">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="11fc03bc-0274-48ca-be6b-07d01151da5a">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ffe66db0-fa5e-4ddb-991e-624b5cf74373">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>PhysicalActivityDaysPerWeek</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="dda38ac3-e6de-4257-8649-ac51738a9832">
+        <Measure dwd:design-time-name="155dcdcb-ef66-4580-a624-ea88ec0511ce">
           <ID>Sedentary Hours Per Day</ID>
           <Name>Sedentary Hours Per Day</Name>
-          <Source dwd:design-time-name="1481a3d9-303b-482e-8c09-fd84ed34aa42">
+          <Source dwd:design-time-name="a41b6afb-dcb5-428f-9c95-7ddf887b8b00">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="e83a1511-ed7a-4d08-ae3a-c3082826ac74">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a535e476-0a22-407e-95d4-ff38a65e9966">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>SedentaryHoursPerDay</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="f2c3167a-edea-4c2a-8ad9-2e4ef305952e">
+        <Measure dwd:design-time-name="399d81f4-1898-4ac4-828c-6fd9f2fb719c">
           <ID>Sleep Hours Per Day</ID>
           <Name>Sleep Hours Per Day</Name>
-          <Source dwd:design-time-name="5c23a6dc-ec98-4fcd-aec3-04d07cdcec25">
+          <Source dwd:design-time-name="f87ffc20-8667-4a3b-b81a-647d0d16b92b">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="b1e08cb8-0185-4838-9387-9f22c09d5949">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="474a63df-1721-4f37-bf25-b71952136aa9">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>SleepHoursPerDay</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="3fd1175f-ecb1-44ba-b7b3-aa316bd5e093">
+        <Measure dwd:design-time-name="76e0c0b4-fa76-43b5-ad29-cc0dd0a0b94d">
           <ID>Fact Health Count</ID>
           <Name>Fact Health Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="80cddf63-42f3-4a71-a036-88ee9f686f37">
+          <Source dwd:design-time-name="7fe0b26c-5699-4543-8e16-d5595c32eae8">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="3b745e38-9c76-4f1a-b0a2-d5b0d46457e2">
+            <Source xsi:type="RowBinding" dwd:design-time-name="42d896c9-fa44-4547-8fe7-975768b26f61">
               <TableID>dbo_Fact_Health</TableID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="c145aff9-4aab-4463-ae17-7e07be76acbe">
+        <Measure dwd:design-time-name="cd126de3-4e47-4aed-ac0e-e9ac66c29cb5">
           <ID>BMI Count</ID>
           <Name>BMI Count</Name>
           <AggregateFunction>Count</AggregateFunction>
           <DataType>Integer</DataType>
-          <Source dwd:design-time-name="a42ee318-5595-42fd-8717-49ac0f518057">
+          <Source dwd:design-time-name="19c73d41-9d9b-4fcf-bd74-b11e34c930ab">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="ece3d6e4-5590-49a7-80e0-93e859b62248">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6745c55c-86ab-4905-96d9-3bfed4138999">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>BMI</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="b9938819-9271-4093-902d-162c712ca0d5">
-          <ID>Sleep Hours Per Day Count</ID>
-          <Name>Sleep Hours Per Day Count</Name>
-          <AggregateFunction>Count</AggregateFunction>
-          <DataType>Integer</DataType>
-          <Source dwd:design-time-name="945dd576-5647-4030-b3be-ecd6f5eb3ebc">
-            <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="68a174bb-9ada-4028-b031-ec7d17cc8337">
-              <TableID>dbo_Fact_Health</TableID>
-              <ColumnID>SleepHoursPerDay</ColumnID>
-            </Source>
-          </Source>
-        </Measure>
-        <Measure dwd:design-time-name="d0105887-df48-4d38-89b7-3888a52d7e3f">
-          <ID>Exercise Hours Per Week Count</ID>
-          <Name>Exercise Hours Per Week Count</Name>
-          <AggregateFunction>Count</AggregateFunction>
-          <DataType>Integer</DataType>
-          <Source dwd:design-time-name="7c75f58c-c776-482d-bde4-6b6968a3332a">
-            <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="036314d7-a215-4a42-9c5d-6fd4ebc95abb">
-              <TableID>dbo_Fact_Health</TableID>
-              <ColumnID>ExerciseHoursPerWeek</ColumnID>
-            </Source>
-          </Source>
-        </Measure>
-        <Measure dwd:design-time-name="9ba08249-2515-4988-b2a5-8611af1899b5">
-          <ID>Heart Rate Count</ID>
-          <Name>Heart Rate Count</Name>
-          <AggregateFunction>Count</AggregateFunction>
-          <DataType>Integer</DataType>
-          <Source dwd:design-time-name="5fe43a1f-5328-4bb6-a6ba-230151e8780b">
-            <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="6359bb24-a3e2-4552-bf84-0369301c1466">
-              <TableID>dbo_Fact_Health</TableID>
-              <ColumnID>HeartRate</ColumnID>
-            </Source>
-          </Source>
-        </Measure>
-        <Measure dwd:design-time-name="8e12ee4a-9c86-4f40-bbd2-258de7ab2b59">
+        <Measure dwd:design-time-name="d323e3e6-e42d-44ab-9bc4-ba2092acbee6">
           <ID>Stress Level Count</ID>
           <Name>Stress Level Count</Name>
           <AggregateFunction>Count</AggregateFunction>
           <DataType>Integer</DataType>
-          <Source dwd:design-time-name="84f2bdec-3c4d-4d1b-abd9-6ef5785577d2">
+          <Source dwd:design-time-name="55b196ba-3af5-4ed6-aba0-c648221abe3a">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="99428781-ae1a-419e-99e5-c9b14a63f04b">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="17e8d4d0-ee5c-40a4-8581-a318d48c1cac">
               <TableID>dbo_Fact_Health</TableID>
               <ColumnID>StressLevel</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5cdc5e58-3f2b-426a-a8f7-3eae78713642">
+          <ID>Exercise Hours Per Week Count</ID>
+          <Name>Exercise Hours Per Week Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="50ccba76-8731-47ab-9379-0603cf2d6ea8">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d70f32b0-ca43-42db-9acc-8807e0133c3b">
+              <TableID>dbo_Fact_Health</TableID>
+              <ColumnID>ExerciseHoursPerWeek</ColumnID>
             </Source>
           </Source>
         </Measure>
@@ -455,15 +427,15 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="4db71fe3-6065-445c-8500-6d178d90b845">
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="bc96e919-4f8c-416b-8fd6-4d1f96b8b836">
           <CubeDimensionID>Fact Health</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="413247b3-0c35-43f1-b984-444d6465267f">
+            <Attribute dwd:design-time-name="1dc710f4-16f7-47c7-b86b-734888715be7">
               <AttributeID>Fact ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="751b0de5-f107-477a-8358-8f34f5c414ce">
+                <KeyColumn dwd:design-time-name="3562e2b9-ec82-43ea-91e9-e80f05f78fc2">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f4c085d1-e528-4e8d-94e0-504de044a5f1">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b5f215a0-dd7d-4020-b48d-0617bedd5825">
                     <TableID>dbo_Fact_Health</TableID>
                     <ColumnID>FactID</ColumnID>
                   </Source>
@@ -473,16 +445,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fe143ede-0549-4f42-beac-3da9d96cc362">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0f9dee0d-a4e5-4d2a-9ba9-592e702de897">
           <CubeDimensionID>Patient</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="8cc33b93-238b-4a2c-bfe6-791bd76102ae">
+            <Attribute dwd:design-time-name="512e5801-f195-4153-aa95-e2f01fb4564c">
               <AttributeID>Patient ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="16d73a54-1f62-41e5-81bf-6bb9c55a93d9">
+                <KeyColumn dwd:design-time-name="40af4ef5-6402-434f-ad7f-10fbd178a4c9">
                   <DataType>WChar</DataType>
                   <DataSize>100</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d8d13bde-c6a3-4af5-9663-261fbca471b1">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c3cf1f8b-8edd-49d0-aa49-d3a41707466c">
                     <TableID>dbo_Fact_Health</TableID>
                     <ColumnID>PatientID</ColumnID>
                   </Source>
@@ -492,15 +464,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cd9dd30f-52d9-4151-9380-34f7f4485389">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b85e67cd-d93c-4f8f-be08-e5c9e90942ae">
           <CubeDimensionID>Geo</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="fa43e6b6-b333-45ad-83e8-0644a44cc90f">
+            <Attribute dwd:design-time-name="91dbc9c4-f048-4777-a322-4b7be247c3f0">
               <AttributeID>Geo ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="237c1eff-eb23-471b-9821-19b1f035ebd0">
+                <KeyColumn dwd:design-time-name="54546cef-8533-497e-8b9f-af1fabc3a785">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3b02c1a0-f201-4a2f-aa21-6bcdcd96c1b2">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="387863bb-db95-46f5-9abf-080963566e2b">
                     <TableID>dbo_Fact_Health</TableID>
                     <ColumnID>GeoID</ColumnID>
                   </Source>
@@ -514,11 +486,11 @@
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="dbeba91f-a71b-448d-ad58-4115d217e5a5">
+  <Source dwd:design-time-name="9dad9175-b141-47c6-b981-a467976916c3">
     <DataSourceViewID>OLAP</DataSourceViewID>
   </Source>
   <MdxScripts>
-    <MdxScript dwd:design-time-name="e29d3578-e4d3-4809-bd0c-4b6dfb95a927">
+    <MdxScript dwd:design-time-name="b714a3ef-3894-477c-9bb4-b15387f26a62">
       <ID>MdxScript</ID>
       <Name>MdxScript</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -530,21 +502,7 @@ The CALCULATE command controls the aggregation of leaf cells in the cube.
 If the CALCULATE command is deleted or modified, the data within the cube is affected.
 You should edit this command only if you manually specify how the cube is aggregated.
 */
-CALCULATE; 
-CREATE MEMBER CURRENTCUBE.[Measures].[Average BMI]
- AS [Measures].[BMI] / [Measures].[BMI Count], 
-FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1  ; 
-CREATE MEMBER CURRENTCUBE.[Measures].[Average SleepHoursPerDay]
- AS [Measures].[Sleep Hours Per Day] / [Measures].[Sleep Hours Per Day Count], 
-VISIBLE = 1  ; 
-CREATE MEMBER CURRENTCUBE.[Measures].[Average StressLevel]
- AS [Measures].[Stress Level] / [Measures].[Stress Level Count], 
-FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1  ; 
-CREATE MEMBER CURRENTCUBE.[Measures].[Average HeartRate]
- AS [Measures].[Heart Rate] / [Measures].[Heart Rate Count], 
-VISIBLE = 1  ; </Text>
+CALCULATE; </Text>
         </Command>
       </Commands>
     </MdxScript>
