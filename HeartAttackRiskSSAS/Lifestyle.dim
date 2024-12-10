@@ -1,0 +1,359 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d1422eec-39ec-4dbc-a668-2d7bbc2506d2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Lifestyle</ID>
+  <Name>Lifestyle</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7147e35a-f56b-428f-b1c5-4c3a1324f6c1">
+    <DataSourceViewID>OLAP</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="6b08a229-70da-43fb-92c0-ee5045b664fb">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="77149956-2c39-4d41-ac07-04ae50798584">
+      <ID>Patient ID</ID>
+      <Name>Patient ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="96cc927d-ecc0-4bfa-a46d-a5631d11ace1">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9725aef-7edc-4a66-ba42-fab24f6c442d">
+            <TableID>dbo_Lifestyle</TableID>
+            <ColumnID>PatientID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d2f3ab6e-542b-45ba-bbab-096ae7511246">
+          <AttributeID>Smoking</AttributeID>
+          <Name>Smoking</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6783a015-eb30-4136-a6ab-f0d49732f593">
+          <AttributeID>Alcohol Consumption</AttributeID>
+          <Name>Alcohol Consumption</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="72257811-275d-4ff0-ac24-9a12e4fcf12c">
+          <AttributeID>Exercise Hours Per Week</AttributeID>
+          <Name>Exercise Hours Per Week</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="314498e0-94af-48af-a173-b364243c5306">
+          <AttributeID>Diet</AttributeID>
+          <Name>Diet</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2654cda1-996f-4e2d-810d-f6603a940502">
+          <AttributeID>Medication Use</AttributeID>
+          <Name>Medication Use</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="98a40bdd-6ffb-41d5-90b3-d3341bf59358">
+          <AttributeID>Physical Activity Days Per Week</AttributeID>
+          <Name>Physical Activity Days Per Week</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="25d313a2-8fd2-4dea-8efe-e112b1854e08">
+          <AttributeID>Sedentary Hours Per Day</AttributeID>
+          <Name>Sedentary Hours Per Day</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dcc87529-5617-4412-b5e2-0f6db3b30d7d">
+          <AttributeID>Sleep Hours Per Day</AttributeID>
+          <Name>Sleep Hours Per Day</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f1214f40-320e-41f9-907d-3098e6958c6c">
+          <AttributeID>Age</AttributeID>
+          <Name>Age</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f00ec653-ae91-4167-803f-cb49e6feb10e">
+          <AttributeID>Sex</AttributeID>
+          <Name>Sex</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f71dd3b9-efad-496d-b43a-2130d5bfbde4">
+          <AttributeID>Income</AttributeID>
+          <Name>Income</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1e681ee4-5ede-46c2-a269-41c12023dc18">
+          <AttributeID>Previous Heart Problems</AttributeID>
+          <Name>Previous Heart Problems</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ebcf2fc-24da-4d92-8f12-dddaa6089aad">
+          <AttributeID>Family History</AttributeID>
+          <Name>Family History</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="53c9f10c-2ccc-4bf3-8837-9464cc57c8cc">
+          <AttributeID>Obesity</AttributeID>
+          <Name>Obesity</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8dabcae6-28f4-4fbe-b6f8-390bbc97b2be">
+      <ID>Smoking</ID>
+      <Name>Smoking</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="199a1a31-b75b-4960-813c-4b33e8425283">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22c21d43-a7f0-4dce-924e-04633a7b6586">
+            <TableID>dbo_Lifestyle</TableID>
+            <ColumnID>Smoking</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7129b984-3846-46b9-86e4-e245d0904b86">
+      <ID>Alcohol Consumption</ID>
+      <Name>Alcohol Consumption</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="90232e36-3a4f-4963-95a6-edbc447665ac">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="da6a503e-0c0c-441d-975c-8dd8c83bfca5">
+            <TableID>dbo_Lifestyle</TableID>
+            <ColumnID>AlcoholConsumption</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b66bd52c-fbfb-47dc-97bb-29374508f62f">
+      <ID>Exercise Hours Per Week</ID>
+      <Name>Exercise Hours Per Week</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="17ec702b-d331-43b7-b9c3-dfbee4e91392">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43c74d94-d681-4049-b50c-b05f80e9f5f5">
+            <TableID>dbo_Lifestyle</TableID>
+            <ColumnID>ExerciseHoursPerWeek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2bf5f13c-6512-4cb8-9d2e-3e82dcef0326">
+      <ID>Diet</ID>
+      <Name>Diet</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0ebcf187-62da-4529-a1f3-35c190718cfa">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d1e3f85-c835-4a05-90ed-4e2b760dc57d">
+            <TableID>dbo_Lifestyle</TableID>
+            <ColumnID>Diet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="59e1514b-d4f2-4f62-b49b-b23d589f0450">
+      <ID>Medication Use</ID>
+      <Name>Medication Use</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="093595d8-856f-41c5-8fdb-ff4a7c62f296">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8406b877-cc0d-4f54-836e-6045363611d3">
+            <TableID>dbo_Lifestyle</TableID>
+            <ColumnID>MedicationUse</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b647709f-f36f-4758-81ce-8b304644a7c1">
+      <ID>Physical Activity Days Per Week</ID>
+      <Name>Physical Activity Days Per Week</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb6d52fd-068e-4eb3-8e19-b97cd37027b2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="15c2d4b0-4a12-4f23-93d1-51738e74f30f">
+            <TableID>dbo_Lifestyle</TableID>
+            <ColumnID>PhysicalActivityDaysPerWeek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a2008763-e187-4b63-b799-24630e01b94c">
+      <ID>Sedentary Hours Per Day</ID>
+      <Name>Sedentary Hours Per Day</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b63ccdb7-ed5b-4ff6-ab33-8c62db40372f">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f98ca8e7-0ad9-4d56-b1fd-b39020b53482">
+            <TableID>dbo_Lifestyle</TableID>
+            <ColumnID>SedentaryHoursPerDay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f31559d6-7a77-48ac-a9c3-6e710cb60379">
+      <ID>Sleep Hours Per Day</ID>
+      <Name>Sleep Hours Per Day</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="59452f29-14a4-4c95-99f0-a1a0c6e0754c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8d5aa4c-54cc-426d-b00b-1bb8490b23ce">
+            <TableID>dbo_Lifestyle</TableID>
+            <ColumnID>SleepHoursPerDay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6583dc60-db0f-407e-a1ab-ba4f925b0215">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c53ce3df-ca95-469a-a58c-b4139624136d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39941638-a03e-48ba-bbae-28fbdb67ceaf">
+            <TableID>dbo_Patient</TableID>
+            <ColumnID>Age</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="34134631-27e8-4071-bd0c-d81bd127b060">
+      <ID>Sex</ID>
+      <Name>Sex</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed866c99-efcc-4b39-8146-88553e157a51">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="24f4de2f-e4a2-4707-b512-68d66e7d3904">
+            <TableID>dbo_Patient</TableID>
+            <ColumnID>Sex</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e07a3bea-bf6e-410a-b273-564c8bd751ec">
+      <ID>Income</ID>
+      <Name>Income</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f772d0fe-3cb0-480a-9d98-d0bdb61a9a46">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b40bc235-be85-4da9-8683-bc689a386abd">
+            <TableID>dbo_Patient</TableID>
+            <ColumnID>Income</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0b6a09e-64cd-4dd7-9e4e-24bdd85d0b10">
+      <ID>Previous Heart Problems</ID>
+      <Name>Previous Heart Problems</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9575901f-cdcb-4872-9c97-985ac8c2e196">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="48013fa4-a4db-4e1a-ae8f-3c9439465587">
+            <TableID>dbo_Patient</TableID>
+            <ColumnID>PreviousHeartProblems</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a053b9ef-fcc8-4687-ae11-f11885c70e1d">
+      <ID>Family History</ID>
+      <Name>Family History</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0cda786e-16ab-4ba9-b4f0-fa312dfd1208">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f6b7ad5-5bd0-45e9-8a22-ee3c1ec3be43">
+            <TableID>dbo_Patient</TableID>
+            <ColumnID>FamilyHistory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2ef807ac-dab3-4d33-beaa-42f8a6326bf1">
+      <ID>Obesity</ID>
+      <Name>Obesity</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8a232543-ee9f-49f9-813b-e1678d0348f2">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="498b93e2-f975-400e-ac98-41af65d12309">
+            <TableID>dbo_Patient</TableID>
+            <ColumnID>Obesity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,185 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6f4c1ed7-d377-4ceb-8a00-98c0383b8257" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OLAP</ID>
+  <Name>OLAP</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>OLAP</DataSourceID>
+  <Schema>
+    <xs:schema id="OLAP" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OLAP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="b6d05948-144a-441c-8372-5bcde473b34a">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact_Health" msprop:DbTableName="Fact_Health" msprop:FriendlyName="Fact_Health" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d209a457-5a2c-4089-9730-94566deb397f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="FactID" msprop:DbColumnName="FactID" msprop:design-time-name="86a5bdaf-1096-4918-92e8-ebaff7271adf" type="xs:int" />
+                  <xs:element name="PatientID" msprop:FriendlyName="PatientID" msprop:DbColumnName="PatientID" msprop:design-time-name="01639a8e-9dc6-4d5d-a8d9-1e35de1895d1">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="GeoID" msprop:FriendlyName="GeoID" msprop:DbColumnName="GeoID" msprop:design-time-name="fe81501f-757e-4aa8-8b47-b7bf40c81566" type="xs:int" />
+                  <xs:element name="SystolicPressure" msprop:FriendlyName="SystolicPressure" msprop:DbColumnName="SystolicPressure" msprop:design-time-name="285bca9b-4491-482e-b4ff-36ec878ec12a" type="xs:int" />
+                  <xs:element name="DiastolicPressure" msprop:FriendlyName="DiastolicPressure" msprop:DbColumnName="DiastolicPressure" msprop:design-time-name="ea794c8b-4b81-4f49-b96e-08074033df31" type="xs:int" />
+                  <xs:element name="Cholesterol" msprop:FriendlyName="Cholesterol" msprop:DbColumnName="Cholesterol" msprop:design-time-name="f7f133ba-810e-4be1-a54c-2216e949c555" type="xs:int" />
+                  <xs:element name="HeartRate" msprop:FriendlyName="HeartRate" msprop:DbColumnName="HeartRate" msprop:design-time-name="6dc306d0-f6e5-42a6-8458-0ed32ac25e6b" type="xs:int" />
+                  <xs:element name="BMI" msprop:FriendlyName="BMI" msprop:DbColumnName="BMI" msprop:design-time-name="6c1268de-7559-43e4-ac96-b761a409882e" type="xs:double" />
+                  <xs:element name="Triglycerides" msprop:FriendlyName="Triglycerides" msprop:DbColumnName="Triglycerides" msprop:design-time-name="a352f7b2-90d2-4767-96ad-ae36d813830a" type="xs:int" />
+                  <xs:element name="StressLevel" msprop:FriendlyName="StressLevel" msprop:DbColumnName="StressLevel" msprop:design-time-name="8206a670-76e5-4c61-b99d-0525596ea8de" type="xs:int" />
+                  <xs:element name="HeartAttackRisk" msprop:FriendlyName="HeartAttackRisk" msprop:DbColumnName="HeartAttackRisk" msprop:design-time-name="f9740cca-c868-48af-866b-26ae57129e76" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Geo" msprop:DbTableName="Geo" msprop:FriendlyName="Geo" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0d0daad2-b237-4df4-8c74-878dcb21567c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GeoID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="GeoID" msprop:DbColumnName="GeoID" msprop:design-time-name="f94d28e7-0738-4b4e-8b27-4f878eae32d5" type="xs:int" />
+                  <xs:element name="Country" msprop:FriendlyName="Country" msprop:DbColumnName="Country" msprop:design-time-name="40e06dd6-0b1e-46b0-a31b-582c0740fa17" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Continent" msprop:FriendlyName="Continent" msprop:DbColumnName="Continent" msprop:design-time-name="af1486c5-07c0-401c-bcfb-ff96045b777e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Hemisphere" msprop:FriendlyName="Hemisphere" msprop:DbColumnName="Hemisphere" msprop:design-time-name="da92f4d1-15b2-4b98-877b-d30d1a2a4ff2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Patient" msprop:DbTableName="Patient" msprop:FriendlyName="Patient" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="8795c911-fb46-4b5c-b76c-d5b1c9baf76d">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PatientID" msprop:FriendlyName="PatientID" msprop:DbColumnName="PatientID" msprop:design-time-name="a7a17442-54ad-4f37-890e-0706e5cc80d8">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Age" msprop:FriendlyName="Age" msprop:DbColumnName="Age" msprop:design-time-name="f6bb3ed2-f7e4-4f56-b879-80ac5295163b" type="xs:int" />
+                  <xs:element name="Sex" msprop:FriendlyName="Sex" msprop:DbColumnName="Sex" msprop:design-time-name="72de398e-9c0b-4596-9d50-0afd159f254e">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Income" msprop:FriendlyName="Income" msprop:DbColumnName="Income" msprop:design-time-name="b16f80e6-8079-494e-8559-d66d511cc66e" type="xs:long" />
+                  <xs:element name="PreviousHeartProblems" msprop:FriendlyName="PreviousHeartProblems" msprop:DbColumnName="PreviousHeartProblems" msprop:design-time-name="863e4574-de4f-42a2-8c54-72124f0c9c84" type="xs:boolean" />
+                  <xs:element name="FamilyHistory" msprop:FriendlyName="FamilyHistory" msprop:DbColumnName="FamilyHistory" msprop:design-time-name="50ad03a1-08a6-431c-8699-75e414f1fa52" type="xs:boolean" />
+                  <xs:element name="Obesity" msprop:FriendlyName="Obesity" msprop:DbColumnName="Obesity" msprop:design-time-name="0540a132-6363-4108-9894-21ed3ac7cafe" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Lifestyle" msprop:DbTableName="Lifestyle" msprop:FriendlyName="Lifestyle" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="b77eb25a-c9ae-4678-9609-9e87c58dc05d">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PatientID" msprop:FriendlyName="PatientID" msprop:DbColumnName="PatientID" msprop:design-time-name="43783e65-4a9e-4808-969a-7fbc96cdc893">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Smoking" msprop:FriendlyName="Smoking" msprop:DbColumnName="Smoking" msprop:design-time-name="eec86dd3-264c-48ff-a79c-2b51c3b1e83a" type="xs:boolean" />
+                  <xs:element name="AlcoholConsumption" msprop:FriendlyName="AlcoholConsumption" msprop:DbColumnName="AlcoholConsumption" msprop:design-time-name="c20b32ba-1e49-42a1-8d6d-412124df9957" type="xs:boolean" />
+                  <xs:element name="ExerciseHoursPerWeek" msprop:FriendlyName="ExerciseHoursPerWeek" msprop:DbColumnName="ExerciseHoursPerWeek" msprop:design-time-name="d6df2451-3c2c-42c3-95c0-033f0d6a3fbe" type="xs:double" />
+                  <xs:element name="Diet" msprop:FriendlyName="Diet" msprop:DbColumnName="Diet" msprop:design-time-name="eb50897a-c12b-43a1-a775-fe01616bae37">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MedicationUse" msprop:FriendlyName="MedicationUse" msprop:DbColumnName="MedicationUse" msprop:design-time-name="b4056b5d-93cd-4617-b9af-31fc4352926c" type="xs:boolean" />
+                  <xs:element name="PhysicalActivityDaysPerWeek" msprop:FriendlyName="PhysicalActivityDaysPerWeek" msprop:DbColumnName="PhysicalActivityDaysPerWeek" msprop:design-time-name="d669bd59-3674-40d2-92ca-577f68ec27c5" type="xs:int" />
+                  <xs:element name="SedentaryHoursPerDay" msprop:FriendlyName="SedentaryHoursPerDay" msprop:DbColumnName="SedentaryHoursPerDay" msprop:design-time-name="876a118d-54cd-4389-8da4-b00d03a4602c" type="xs:double" />
+                  <xs:element name="SleepHoursPerDay" msprop:FriendlyName="SleepHoursPerDay" msprop:DbColumnName="SleepHoursPerDay" msprop:design-time-name="e2fdede6-9efa-4da6-9a48-99cce6e0481c" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_Health" />
+          <xs:field xpath="FactID" />
+        </xs:unique>
+        <xs:unique name="dbo_Geo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Geo" />
+          <xs:field xpath="GeoID" />
+        </xs:unique>
+        <xs:unique name="dbo_Patient_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Patient" />
+          <xs:field xpath="PatientID" />
+        </xs:unique>
+        <xs:unique name="dbo_Lifestyle_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Lifestyle" />
+          <xs:field xpath="PatientID" />
+        </xs:unique>
+        <xs:keyref name="FK__Lifestyle__Patie__0880433F" refer="dbo_Patient_Constraint1">
+          <xs:selector xpath=".//dbo_Lifestyle" />
+          <xs:field xpath="PatientID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Heal__Patie__0B5CAFEA" refer="dbo_Patient_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Health" />
+          <xs:field xpath="PatientID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Heal__GeoID__0C50D423" refer="dbo_Geo_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Health" />
+          <xs:field xpath="GeoID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OLAP xmlns="" />
+  </Schema>
+</DataSourceView>
