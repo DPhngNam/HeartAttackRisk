@@ -37,6 +37,7 @@ CREATE TABLE Fact_Health (
     Triglycerides INT NOT NULL,
 	StressLevel INT NOT NULL,
     HeartAttackRisk BIT NOT NULL,
+
     FOREIGN KEY (PatientID) REFERENCES Patient(PatientID),
     FOREIGN KEY (GeoID) REFERENCES Geo(GeoID),
 );
