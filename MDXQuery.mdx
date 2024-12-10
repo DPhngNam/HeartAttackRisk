@@ -1,0 +1,66 @@
+SELECT 
+    [Geo].[Continent].Members ON ROWS, 
+    [Measures].[Average BMI] ON COLUMNS
+FROM 
+    [OLAP];
+
+SELECT 
+    [Geo].[Country].Members ON ROWS, 
+    [Measures].[Average HeartRate] ON COLUMNS
+FROM 
+    [OLAP]
+WHERE 
+    [Geo].[Continent].[Asia];
+--3
+
+//4.Dice Query 
+
+
+
+//5.Pivot Query
+SELECT 
+    [Geo].[Continent].Members ON ROWS, 
+    {[Measures].[BMI], [Measures].[Stress Level]} ON COLUMNS
+FROM 
+    [OLAP];
+
+//6.Generate
+SELECT 
+    GENERATE(
+        [Geo].[Continent].Members, 
+        {[Geo].[Continent].CURRENTMEMBER}
+    ) ON ROWS, 
+    [Measures].[Average BMI] ON COLUMNS
+FROM 
+    [OLAP]
+
+//7.TOPCOUNT Function
+SELECT 
+    TOPCOUNT(
+        [Geo].[Country].Members, 
+        5, 
+        [Measures].[Average BMI]
+    ) ON ROWS, 
+    [Measures].[Average BMI] ON COLUMNS
+FROM 
+    [OLAP];
+
+//8.HAVING Clause
+SELECT 
+    [Geo].[Country].Members 
+	HAVING [Measures].[Average BMI] > 29 ON ROWS, 
+    [Measures].[Average BMI] ON COLUMNS
+FROM 
+    [OLAP]
+
+ -- 10.Using FILTER
+SELECT 
+    FILTER(
+        [Geo].[Country].Members, 
+        [Measures].[Average BMI] > 29
+    ) ON ROWS, 
+    [Measures].[Average BMI] ON COLUMNS
+FROM 
+    [OLAP]
+WHERE 
+    [Geo].[Continent].[Asia];

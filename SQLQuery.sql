@@ -12,18 +12,11 @@ CREATE TABLE Patient (
 	PreviousHeartProblems BIT NOT NULL,
 	FamilyHistory BIT NOT NULL,
 	Obesity BIT NOT NULL,
-);
-CREATE TABLE Lifestyle (
-	PatientID VARCHAR(100) PRIMARY KEY,
+	Diet VARCHAR(100) NOT NULL,
+    MedicationUse BIT NOT NULL,
 	Smoking BIT NOT NULL,
 	AlcoholConsumption BIT NOT NULL,
-	ExerciseHoursPerWeek FLOAT NOT NULL,
-    Diet VARCHAR(100) NOT NULL,
-    MedicationUse BIT NOT NULL,
-	PhysicalActivityDaysPerWeek INT NOT NULL,
-	SedentaryHoursPerDay FLOAT NOT NULL,
-	SleepHoursPerDay INT NOT NULL,
-	FOREIGN KEY (PatientID) REFERENCES Patient(PatientID),
+	Diabetes BIT NOT NULL,
 );
 CREATE TABLE Fact_Health (
     FactID INT IDENTITY(1,1) PRIMARY KEY,
@@ -37,7 +30,10 @@ CREATE TABLE Fact_Health (
     Triglycerides INT NOT NULL,
 	StressLevel INT NOT NULL,
     HeartAttackRisk BIT NOT NULL,
-
+	ExerciseHoursPerWeek FLOAT NOT NULL,
+	PhysicalActivityDaysPerWeek INT NOT NULL,
+	SedentaryHoursPerDay FLOAT NOT NULL,
+	SleepHoursPerDay INT NOT NULL,
     FOREIGN KEY (PatientID) REFERENCES Patient(PatientID),
     FOREIGN KEY (GeoID) REFERENCES Geo(GeoID),
 );

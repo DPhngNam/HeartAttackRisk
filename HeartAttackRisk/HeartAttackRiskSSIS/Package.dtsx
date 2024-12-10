@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="53"
-  DTS:VersionGUID="{ADC74FD3-4E4A-488F-9C95-B7CD13A277FC}">
+  DTS:VersionBuild="56"
+  DTS:VersionGUID="{96E83825-E3B2-4768-9F09-63B9BDC4C05F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -334,7 +334,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[Geo]</property>
+                      name="OpenRowset">[dbo].[Geo]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1945,1875 +1945,6 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\CREATE DIMs\DIM_Lifestyle"
-          DTS:CreationName="Microsoft.Pipeline"
-          DTS:Description="Data Flow Task"
-          DTS:DTSID="{3D6E1AD6-324E-45DA-8314-7D1B10FE0138}"
-          DTS:ExecutableType="Microsoft.Pipeline"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="DIM_Lifestyle"
-          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <pipeline
-              version="1">
-              <components>
-                <component
-                  refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle"
-                  componentClassID="Microsoft.OLEDBDestination"
-                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-                  description="OLE DB Destination"
-                  name="DIM Lifestyle"
-                  usesDispositions="true"
-                  version="4">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[Lifestyle]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">3</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepIdentity">false</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepNulls">false</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                      name="FastLoadMaxInsertCommitSize">2147483647</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-6A6P54K\MSSQLANALYSIS.OLAP]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-6A6P54K\MSSQLANALYSIS.OLAP]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input]"
-                      errorOrTruncationOperation="Insert"
-                      errorRowDisposition="FailComponent"
-                      hasSideEffects="true"
-                      name="OLE DB Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].Columns[PatientID]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="PatientID"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[PatientID]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[PatientID]" />
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].Columns[Smoking]"
-                          cachedDataType="bool"
-                          cachedName="Smoking"
-                          cachedSortKeyPosition="1"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[Smoking]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Smoking]" />
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].Columns[AlcoholConsumption]"
-                          cachedDataType="bool"
-                          cachedName="AlcoholConsumption"
-                          cachedSortKeyPosition="2"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[AlcoholConsumption]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[AlcoholConsumption]" />
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].Columns[ExerciseHoursPerWeek]"
-                          cachedDataType="r8"
-                          cachedName="ExerciseHoursPerWeek"
-                          cachedSortKeyPosition="3"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[ExerciseHoursPerWeek]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[ExerciseHoursPerWeek]" />
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].Columns[Diet]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Diet"
-                          cachedSortKeyPosition="4"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[Diet]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Diet]" />
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].Columns[MedicationUse]"
-                          cachedDataType="bool"
-                          cachedName="MedicationUse"
-                          cachedSortKeyPosition="5"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[MedicationUse]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[MedicationUse]" />
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].Columns[PhysicalActivityDaysPerWeek]"
-                          cachedDataType="i4"
-                          cachedName="PhysicalActivityDaysPerWeek"
-                          cachedSortKeyPosition="6"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[PhysicalActivityDaysPerWeek]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[PhysicalActivityDaysPerWeek]" />
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].Columns[SedentaryHoursPerDay]"
-                          cachedDataType="r8"
-                          cachedName="SedentaryHoursPerDay"
-                          cachedSortKeyPosition="7"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[SedentaryHoursPerDay]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[SedentaryHoursPerDay]" />
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].Columns[SleepHoursPerDay]"
-                          cachedDataType="i4"
-                          cachedName="SleepHoursPerDay"
-                          cachedSortKeyPosition="8"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[SleepHoursPerDay]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[SleepHoursPerDay]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[PatientID]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="PatientID" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[Smoking]"
-                          dataType="bool"
-                          name="Smoking" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[AlcoholConsumption]"
-                          dataType="bool"
-                          name="AlcoholConsumption" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[ExerciseHoursPerWeek]"
-                          dataType="r8"
-                          name="ExerciseHoursPerWeek" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[Diet]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Diet" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[MedicationUse]"
-                          dataType="bool"
-                          name="MedicationUse" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[PhysicalActivityDaysPerWeek]"
-                          dataType="i4"
-                          name="PhysicalActivityDaysPerWeek" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[SedentaryHoursPerDay]"
-                          dataType="r8"
-                          name="SedentaryHoursPerDay" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input].ExternalColumns[SleepHoursPerDay]"
-                          dataType="i4"
-                          name="SleepHoursPerDay" />
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Outputs[OLE DB Destination Error Output]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\CREATE DIMs\DIM_Lifestyle\Lookup"
-                  componentClassID="Microsoft.Lookup"
-                  contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-                  description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-                  name="Lookup"
-                  usesDispositions="true"
-                  version="6">
-                  <properties>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the SQL statement that generates the lookup table."
-                      expressionType="Notify"
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Patient]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                      expressionType="Notify"
-                      name="SqlCommandParam"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Patient]) [refTable]
-where [refTable].[PatientID] = ?</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the type of connection used to access the reference dataset."
-                      name="ConnectionType"
-                      typeConverter="LookupConnectionType">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the cache type of the lookup table."
-                      name="CacheType"
-                      typeConverter="CacheType">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                      name="NoMatchBehavior"
-                      typeConverter="LookupNoMatchBehavior">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                      name="NoMatchCachePercentage">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                      name="MaxMemoryUsage">25</property>
-                    <property
-                      dataType="System.Int64"
-                      description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                      name="MaxMemoryUsage64">25</property>
-                    <property
-                      dataType="System.String"
-                      description="Indicates whether to reference metadata in an XML format."
-                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PatientID" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Age" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Sex" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Income" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PreviousHeartProblems" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FamilyHistory" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Obesity" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PatientID]};</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                      name="TreatDuplicateKeysAsError">false</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-6A6P54K\MSSQLANALYSIS.OLAP]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-6A6P54K\MSSQLANALYSIS.OLAP]"
-                      description="Connection manager used to access lookup data."
-                      name="OleDbConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Inputs[Lookup Input]"
-                      name="Lookup Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Inputs[Lookup Input].Columns[PatientID]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="PatientID"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PatientID]">
-                          <properties>
-                            <property
-                              dataType="System.String"
-                              description="Specifies the column in the reference table that a column joins."
-                              name="JoinToReferenceColumn">PatientID</property>
-                            <property
-                              dataType="System.Null"
-                              description="Specifies the column in the reference table from which a column is copied."
-                              name="CopyFromReferenceColumn" />
-                          </properties>
-                        </inputColumn>
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Match Output]"
-                      errorOrTruncationOperation="Lookup"
-                      errorRowDisposition="FailComponent"
-                      exclusionGroup="1"
-                      name="Lookup Match Output"
-                      synchronousInputId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Inputs[Lookup Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Match Output].Columns[PatientID]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Copy Column"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Match Output].Columns[PatientID]"
-                          name="PatientID"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.String"
-                              description="Specifies the column in the reference table from which a column is copied."
-                              name="CopyFromReferenceColumn">PatientID</property>
-                          </properties>
-                        </outputColumn>
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup No Match Output]"
-                      description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                      exclusionGroup="1"
-                      name="Lookup No Match Output"
-                      synchronousInputId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Inputs[Lookup Input]">
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Error Output]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="Lookup Error Output"
-                      synchronousInputId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Inputs[Lookup Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source"
-                  componentClassID="Microsoft.OLEDBSource"
-                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-                  description="OLE DB Source"
-                  name="OLE DB Source"
-                  usesDispositions="true"
-                  version="7">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[dbo].[RawData]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                    <property
-                      dataType="System.String"
-                      description="The variable that contains the SQL command to be executed."
-                      name="SqlCommandVariable"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">0</property>
-                    <property
-                      dataType="System.String"
-                      description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping"></property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-6A6P54K\MSSQLANALYSIS.OLAP]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-6A6P54K\MSSQLANALYSIS.OLAP]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
-                  <outputs>
-                    <output
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output]"
-                      name="OLE DB Source Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PatientID]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PatientID]"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PatientID]"
-                          name="PatientID"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Age]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Age]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Age]"
-                          name="Age"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Sex]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Sex]"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Sex]"
-                          name="Sex"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cholesterol]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Cholesterol]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cholesterol]"
-                          name="Cholesterol"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[HeartRate]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HeartRate]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[HeartRate]"
-                          name="HeartRate"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Diabetes]"
-                          dataType="bool"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Diabetes]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Diabetes]"
-                          name="Diabetes"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[FamilyHistory]"
-                          dataType="bool"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FamilyHistory]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[FamilyHistory]"
-                          name="FamilyHistory"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Smoking]"
-                          dataType="bool"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Smoking]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Smoking]"
-                          name="Smoking"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Obesity]"
-                          dataType="bool"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Obesity]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Obesity]"
-                          name="Obesity"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[AlcoholConsumption]"
-                          dataType="bool"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AlcoholConsumption]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[AlcoholConsumption]"
-                          name="AlcoholConsumption"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExerciseHoursPerWeek]"
-                          dataType="r8"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ExerciseHoursPerWeek]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExerciseHoursPerWeek]"
-                          name="ExerciseHoursPerWeek"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Diet]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Diet]"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Diet]"
-                          name="Diet"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PreviousHeartProblems]"
-                          dataType="bool"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PreviousHeartProblems]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PreviousHeartProblems]"
-                          name="PreviousHeartProblems"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[MedicationUse]"
-                          dataType="bool"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MedicationUse]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[MedicationUse]"
-                          name="MedicationUse"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PhysicalActivityDaysPerWeek]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PhysicalActivityDaysPerWeek]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PhysicalActivityDaysPerWeek]"
-                          name="PhysicalActivityDaysPerWeek"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SedentaryHoursPerDay]"
-                          dataType="r8"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SedentaryHoursPerDay]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SedentaryHoursPerDay]"
-                          name="SedentaryHoursPerDay"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SleepHoursPerDay]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SleepHoursPerDay]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SleepHoursPerDay]"
-                          name="SleepHoursPerDay"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Country]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Country]"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Country]"
-                          name="Country"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Continent]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Continent]"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Continent]"
-                          name="Continent"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hemisphere]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Hemisphere]"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hemisphere]"
-                          name="Hemisphere"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SystolicPressure]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SystolicPressure]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SystolicPressure]"
-                          name="SystolicPressure"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[DiastolicPressure]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DiastolicPressure]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[DiastolicPressure]"
-                          name="DiastolicPressure"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[BMI]"
-                          dataType="r8"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[BMI]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[BMI]"
-                          name="BMI"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Income]"
-                          dataType="i8"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Income]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Income]"
-                          name="Income"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Triglycerides]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Triglycerides]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Triglycerides]"
-                          name="Triglycerides"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[StressLevel]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StressLevel]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[StressLevel]"
-                          name="StressLevel"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[HeartAttackRisk]"
-                          dataType="bool"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HeartAttackRisk]"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[HeartAttackRisk]"
-                          name="HeartAttackRisk"
-                          truncationRowDisposition="FailComponent" />
-                      </outputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PatientID]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="PatientID" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Age]"
-                          dataType="i4"
-                          name="Age" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Sex]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Sex" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Cholesterol]"
-                          dataType="i4"
-                          name="Cholesterol" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HeartRate]"
-                          dataType="i4"
-                          name="HeartRate" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Diabetes]"
-                          dataType="bool"
-                          name="Diabetes" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FamilyHistory]"
-                          dataType="bool"
-                          name="FamilyHistory" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Smoking]"
-                          dataType="bool"
-                          name="Smoking" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Obesity]"
-                          dataType="bool"
-                          name="Obesity" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AlcoholConsumption]"
-                          dataType="bool"
-                          name="AlcoholConsumption" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ExerciseHoursPerWeek]"
-                          dataType="r8"
-                          name="ExerciseHoursPerWeek" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Diet]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Diet" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PreviousHeartProblems]"
-                          dataType="bool"
-                          name="PreviousHeartProblems" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MedicationUse]"
-                          dataType="bool"
-                          name="MedicationUse" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PhysicalActivityDaysPerWeek]"
-                          dataType="i4"
-                          name="PhysicalActivityDaysPerWeek" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SedentaryHoursPerDay]"
-                          dataType="r8"
-                          name="SedentaryHoursPerDay" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SleepHoursPerDay]"
-                          dataType="i4"
-                          name="SleepHoursPerDay" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Country]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Country" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Continent]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Continent" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Hemisphere]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Hemisphere" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SystolicPressure]"
-                          dataType="i4"
-                          name="SystolicPressure" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DiastolicPressure]"
-                          dataType="i4"
-                          name="DiastolicPressure" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[BMI]"
-                          dataType="r8"
-                          name="BMI" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Income]"
-                          dataType="i8"
-                          name="Income" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Triglycerides]"
-                          dataType="i4"
-                          name="Triglycerides" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StressLevel]"
-                          dataType="i4"
-                          name="StressLevel" />
-                        <externalMetadataColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HeartAttackRisk]"
-                          dataType="bool"
-                          name="HeartAttackRisk" />
-                      </externalMetadataColumns>
-                    </output>
-                    <output
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                      isErrorOut="true"
-                      name="OLE DB Source Error Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PatientID]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PatientID]"
-                          name="PatientID" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Age]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Age]"
-                          name="Age" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Sex]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Sex]"
-                          name="Sex" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Cholesterol]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Cholesterol]"
-                          name="Cholesterol" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HeartRate]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HeartRate]"
-                          name="HeartRate" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Diabetes]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Diabetes]"
-                          name="Diabetes" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FamilyHistory]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FamilyHistory]"
-                          name="FamilyHistory" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Smoking]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Smoking]"
-                          name="Smoking" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Obesity]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Obesity]"
-                          name="Obesity" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AlcoholConsumption]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AlcoholConsumption]"
-                          name="AlcoholConsumption" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ExerciseHoursPerWeek]"
-                          dataType="r8"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ExerciseHoursPerWeek]"
-                          name="ExerciseHoursPerWeek" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Diet]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Diet]"
-                          name="Diet" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PreviousHeartProblems]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PreviousHeartProblems]"
-                          name="PreviousHeartProblems" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MedicationUse]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MedicationUse]"
-                          name="MedicationUse" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PhysicalActivityDaysPerWeek]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PhysicalActivityDaysPerWeek]"
-                          name="PhysicalActivityDaysPerWeek" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SedentaryHoursPerDay]"
-                          dataType="r8"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SedentaryHoursPerDay]"
-                          name="SedentaryHoursPerDay" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SleepHoursPerDay]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SleepHoursPerDay]"
-                          name="SleepHoursPerDay" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Country]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Country]"
-                          name="Country" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Continent]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Continent]"
-                          name="Continent" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Hemisphere]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Hemisphere]"
-                          name="Hemisphere" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SystolicPressure]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SystolicPressure]"
-                          name="SystolicPressure" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DiastolicPressure]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DiastolicPressure]"
-                          name="DiastolicPressure" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[BMI]"
-                          dataType="r8"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[BMI]"
-                          name="BMI" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Income]"
-                          dataType="i8"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Income]"
-                          name="Income" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Triglycerides]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Triglycerides]"
-                          name="Triglycerides" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StressLevel]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StressLevel]"
-                          name="StressLevel" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HeartAttackRisk]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HeartAttackRisk]"
-                          name="HeartAttackRisk" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\CREATE DIMs\DIM_Lifestyle\Sort"
-                  componentClassID="Microsoft.Sort"
-                  contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-                  description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-                  name="Sort"
-                  version="1">
-                  <properties>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                      name="EliminateDuplicates">true</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the maximum number of threads to use for sorting."
-                      expressionType="Notify"
-                      name="MaximumThreads">-1</property>
-                  </properties>
-                  <inputs>
-                    <input
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input]"
-                      name="Sort Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[PatientID]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="PatientID"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Match Output].Columns[PatientID]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Age]"
-                          cachedDataType="i4"
-                          cachedName="Age"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Age]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Sex]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Sex"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Sex]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Cholesterol]"
-                          cachedDataType="i4"
-                          cachedName="Cholesterol"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cholesterol]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[HeartRate]"
-                          cachedDataType="i4"
-                          cachedName="HeartRate"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[HeartRate]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Diabetes]"
-                          cachedDataType="bool"
-                          cachedName="Diabetes"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Diabetes]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[FamilyHistory]"
-                          cachedDataType="bool"
-                          cachedName="FamilyHistory"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[FamilyHistory]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Smoking]"
-                          cachedDataType="bool"
-                          cachedName="Smoking"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Smoking]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">1</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Obesity]"
-                          cachedDataType="bool"
-                          cachedName="Obesity"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Obesity]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[AlcoholConsumption]"
-                          cachedDataType="bool"
-                          cachedName="AlcoholConsumption"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[AlcoholConsumption]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">2</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[ExerciseHoursPerWeek]"
-                          cachedDataType="r8"
-                          cachedName="ExerciseHoursPerWeek"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExerciseHoursPerWeek]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">3</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Diet]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Diet"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Diet]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">4</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[PreviousHeartProblems]"
-                          cachedDataType="bool"
-                          cachedName="PreviousHeartProblems"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PreviousHeartProblems]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[MedicationUse]"
-                          cachedDataType="bool"
-                          cachedName="MedicationUse"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[MedicationUse]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">5</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[PhysicalActivityDaysPerWeek]"
-                          cachedDataType="i4"
-                          cachedName="PhysicalActivityDaysPerWeek"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PhysicalActivityDaysPerWeek]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">6</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[SedentaryHoursPerDay]"
-                          cachedDataType="r8"
-                          cachedName="SedentaryHoursPerDay"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SedentaryHoursPerDay]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">7</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[SleepHoursPerDay]"
-                          cachedDataType="i4"
-                          cachedName="SleepHoursPerDay"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SleepHoursPerDay]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">8</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Country]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Country"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Country]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Continent]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Continent"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Continent]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Hemisphere]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Hemisphere"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hemisphere]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[SystolicPressure]"
-                          cachedDataType="i4"
-                          cachedName="SystolicPressure"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SystolicPressure]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[DiastolicPressure]"
-                          cachedDataType="i4"
-                          cachedName="DiastolicPressure"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[DiastolicPressure]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[BMI]"
-                          cachedDataType="r8"
-                          cachedName="BMI"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[BMI]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Income]"
-                          cachedDataType="i8"
-                          cachedName="Income"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Income]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[Triglycerides]"
-                          cachedDataType="i4"
-                          cachedName="Triglycerides"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Triglycerides]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[StressLevel]"
-                          cachedDataType="i4"
-                          cachedName="StressLevel"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[StressLevel]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input].Columns[HeartAttackRisk]"
-                          cachedDataType="bool"
-                          cachedName="HeartAttackRisk"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[HeartAttackRisk]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output]"
-                      isSorted="true"
-                      name="Sort Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[PatientID]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[PatientID]"
-                          name="PatientID">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Match Output].Columns[PatientID]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Age]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Age]"
-                          name="Age">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Age]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Sex]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Sex]"
-                          name="Sex">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Sex]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Cholesterol]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Cholesterol]"
-                          name="Cholesterol">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cholesterol]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[HeartRate]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[HeartRate]"
-                          name="HeartRate">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[HeartRate]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Diabetes]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Diabetes]"
-                          name="Diabetes">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Diabetes]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[FamilyHistory]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[FamilyHistory]"
-                          name="FamilyHistory">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[FamilyHistory]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Smoking]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Smoking]"
-                          name="Smoking"
-                          sortKeyPosition="1">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Smoking]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Obesity]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Obesity]"
-                          name="Obesity">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Obesity]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[AlcoholConsumption]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[AlcoholConsumption]"
-                          name="AlcoholConsumption"
-                          sortKeyPosition="2">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[AlcoholConsumption]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[ExerciseHoursPerWeek]"
-                          dataType="r8"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[ExerciseHoursPerWeek]"
-                          name="ExerciseHoursPerWeek"
-                          sortKeyPosition="3">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExerciseHoursPerWeek]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Diet]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Diet]"
-                          name="Diet"
-                          sortKeyPosition="4">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Diet]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[PreviousHeartProblems]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[PreviousHeartProblems]"
-                          name="PreviousHeartProblems">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PreviousHeartProblems]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[MedicationUse]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[MedicationUse]"
-                          name="MedicationUse"
-                          sortKeyPosition="5">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[MedicationUse]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[PhysicalActivityDaysPerWeek]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[PhysicalActivityDaysPerWeek]"
-                          name="PhysicalActivityDaysPerWeek"
-                          sortKeyPosition="6">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[PhysicalActivityDaysPerWeek]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[SedentaryHoursPerDay]"
-                          dataType="r8"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[SedentaryHoursPerDay]"
-                          name="SedentaryHoursPerDay"
-                          sortKeyPosition="7">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SedentaryHoursPerDay]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[SleepHoursPerDay]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[SleepHoursPerDay]"
-                          name="SleepHoursPerDay"
-                          sortKeyPosition="8">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SleepHoursPerDay]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Country]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Country]"
-                          name="Country">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Country]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Continent]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Continent]"
-                          name="Continent">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Continent]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Hemisphere]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Hemisphere]"
-                          name="Hemisphere">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hemisphere]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[SystolicPressure]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[SystolicPressure]"
-                          name="SystolicPressure">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[SystolicPressure]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[DiastolicPressure]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[DiastolicPressure]"
-                          name="DiastolicPressure">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[DiastolicPressure]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[BMI]"
-                          dataType="r8"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[BMI]"
-                          name="BMI">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[BMI]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Income]"
-                          dataType="i8"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Income]"
-                          name="Income">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Income]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Triglycerides]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[Triglycerides]"
-                          name="Triglycerides">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[Triglycerides]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[StressLevel]"
-                          dataType="i4"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[StressLevel]"
-                          name="StressLevel">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[StressLevel]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[HeartAttackRisk]"
-                          dataType="bool"
-                          lineageId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output].Columns[HeartAttackRisk]"
-                          name="HeartAttackRisk">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output].Columns[HeartAttackRisk]}</property>
-                          </properties>
-                        </outputColumn>
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-              </components>
-              <paths>
-                <path
-                  refId="Package\CREATE DIMs\DIM_Lifestyle.Paths[Lookup Match Output]"
-                  endId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Inputs[Sort Input]"
-                  name="Lookup Match Output"
-                  startId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\CREATE DIMs\DIM_Lifestyle.Paths[OLE DB Source Output]"
-                  endId="Package\CREATE DIMs\DIM_Lifestyle\Lookup.Inputs[Lookup Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\CREATE DIMs\DIM_Lifestyle.Paths[Sort Output]"
-                  endId="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle.Inputs[OLE DB Destination Input]"
-                  name="Sort Output"
-                  startId="Package\CREATE DIMs\DIM_Lifestyle\Sort.Outputs[Sort Output]" />
-              </paths>
-            </pipeline>
-          </DTS:ObjectData>
-        </DTS:Executable>
-        <DTS:Executable
           DTS:refId="Package\CREATE DIMs\DIM_Patient"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
@@ -3843,7 +1974,7 @@ where [refTable].[PatientID] = ?</property>
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[Patient]</property>
+                      name="OpenRowset">[dbo].[Patient]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3952,6 +2083,38 @@ where [refTable].[PatientID] = ?</property>
                           cachedSortKeyPosition="4"
                           externalMetadataColumnId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Income]"
                           lineageId="Package\CREATE DIMs\DIM_Patient\Sort.Outputs[Sort Output].Columns[Income]" />
+                        <inputColumn
+                          refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Diet]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="Diet"
+                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Diet]"
+                          lineageId="Package\CREATE DIMs\DIM_Patient\Sort.Outputs[Sort Output].Columns[Diet]" />
+                        <inputColumn
+                          refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MedicationUse]"
+                          cachedDataType="bool"
+                          cachedName="MedicationUse"
+                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MedicationUse]"
+                          lineageId="Package\CREATE DIMs\DIM_Patient\Sort.Outputs[Sort Output].Columns[MedicationUse]" />
+                        <inputColumn
+                          refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Smoking]"
+                          cachedDataType="bool"
+                          cachedName="Smoking"
+                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Smoking]"
+                          lineageId="Package\CREATE DIMs\DIM_Patient\Sort.Outputs[Sort Output].Columns[Smoking]" />
+                        <inputColumn
+                          refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AlcoholConsumption]"
+                          cachedDataType="bool"
+                          cachedName="AlcoholConsumption"
+                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AlcoholConsumption]"
+                          lineageId="Package\CREATE DIMs\DIM_Patient\Sort.Outputs[Sort Output].Columns[AlcoholConsumption]" />
+                        <inputColumn
+                          refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Diabetes]"
+                          cachedDataType="bool"
+                          cachedName="Diabetes"
+                          externalMetadataColumnId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Diabetes]"
+                          lineageId="Package\CREATE DIMs\DIM_Patient\Sort.Outputs[Sort Output].Columns[Diabetes]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3987,6 +2150,28 @@ where [refTable].[PatientID] = ?</property>
                           refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Obesity]"
                           dataType="bool"
                           name="Obesity" />
+                        <externalMetadataColumn
+                          refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Diet]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Diet" />
+                        <externalMetadataColumn
+                          refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MedicationUse]"
+                          dataType="bool"
+                          name="MedicationUse" />
+                        <externalMetadataColumn
+                          refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Smoking]"
+                          dataType="bool"
+                          name="Smoking" />
+                        <externalMetadataColumn
+                          refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AlcoholConsumption]"
+                          dataType="bool"
+                          name="AlcoholConsumption" />
+                        <externalMetadataColumn
+                          refId="Package\CREATE DIMs\DIM_Patient\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Diabetes]"
+                          dataType="bool"
+                          name="Diabetes" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -5494,16 +3679,6 @@ where [refTable].[PatientID] = ?</property>
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
-      <DTS:PrecedenceConstraints>
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\CREATE DIMs.PrecedenceConstraints[Constraint]"
-          DTS:CreationName=""
-          DTS:DTSID="{B77D029A-BA6B-40EF-8930-A8F54997C133}"
-          DTS:From="Package\CREATE DIMs\DIM_Patient"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint"
-          DTS:To="Package\CREATE DIMs\DIM_Lifestyle" />
-      </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\CREATE FACT"
@@ -5581,7 +3756,7 @@ where [refTable].[PatientID] = ?</property>
                     <property
                       dataType="System.String"
                       description="Indicates whether to reference metadata in an XML format."
-                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PatientID" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Age" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Sex" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Income" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PreviousHeartProblems" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FamilyHistory" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Obesity" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PatientID" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Age" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Sex" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Income" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PreviousHeartProblems" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FamilyHistory" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Obesity" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Diet" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MedicationUse" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Smoking" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AlcoholConsumption" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Diabetes" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                     <property
                       containsID="true"
                       dataType="System.String"
@@ -6080,6 +4255,22 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                           refId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HeartAttackRisk]"
                           dataType="bool"
                           name="HeartAttackRisk" />
+                        <externalMetadataColumn
+                          refId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExerciseHoursPerWeek]"
+                          dataType="r8"
+                          name="ExerciseHoursPerWeek" />
+                        <externalMetadataColumn
+                          refId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PhysicalActivityDaysPerWeek]"
+                          dataType="i4"
+                          name="PhysicalActivityDaysPerWeek" />
+                        <externalMetadataColumn
+                          refId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SedentaryHoursPerDay]"
+                          dataType="r8"
+                          name="SedentaryHoursPerDay" />
+                        <externalMetadataColumn
+                          refId="Package\CREATE FACT\Fact_Health\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SleepHoursPerDay]"
+                          dataType="i4"
+                          name="SleepHoursPerDay" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -6918,7 +5109,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
+                              name="NewSortKeyPosition">14</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -6984,7 +5175,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
+                              name="NewSortKeyPosition">11</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -7000,7 +5191,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
+                              name="NewSortKeyPosition">12</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -7016,7 +5207,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
+                              name="NewSortKeyPosition">13</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -7370,7 +5561,8 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                           refId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[ExerciseHoursPerWeek]"
                           dataType="r8"
                           lineageId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[ExerciseHoursPerWeek]"
-                          name="ExerciseHoursPerWeek">
+                          name="ExerciseHoursPerWeek"
+                          sortKeyPosition="14">
                           <properties>
                             <property
                               containsID="true"
@@ -7424,7 +5616,8 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                           refId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[PhysicalActivityDaysPerWeek]"
                           dataType="i4"
                           lineageId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[PhysicalActivityDaysPerWeek]"
-                          name="PhysicalActivityDaysPerWeek">
+                          name="PhysicalActivityDaysPerWeek"
+                          sortKeyPosition="11">
                           <properties>
                             <property
                               containsID="true"
@@ -7437,7 +5630,8 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                           refId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[SedentaryHoursPerDay]"
                           dataType="r8"
                           lineageId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[SedentaryHoursPerDay]"
-                          name="SedentaryHoursPerDay">
+                          name="SedentaryHoursPerDay"
+                          sortKeyPosition="12">
                           <properties>
                             <property
                               containsID="true"
@@ -7450,7 +5644,8 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                           refId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[SleepHoursPerDay]"
                           dataType="i4"
                           lineageId="Package\CREATE FACT\Fact_Health\Sort.Outputs[Sort Output].Columns[SleepHoursPerDay]"
-                          name="SleepHoursPerDay">
+                          name="SleepHoursPerDay"
+                          sortKeyPosition="13">
                           <properties>
                             <property
                               containsID="true"
@@ -8544,7 +6739,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[RawData]</property>
+                  name="OpenRowset">[dbo].[RawData]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -9013,41 +7208,15 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="154.4,41.6"
           Id="Package\CREATE DIMs\DIM_Geography"
           TopLeft="53.5714292389397,174.835293822047" />
         <NodeLayout
-          Size="142.4,41.6"
-          Id="Package\CREATE DIMs\DIM_Lifestyle"
-          TopLeft="60.7142863970023,96.0705880087345" />
-        <NodeLayout
           Size="136,41.6"
           Id="Package\CREATE DIMs\DIM_Patient"
-          TopLeft="56.2571435337773,20.0588233330155" />
-        <EdgeLayout
-          Id="Package\CREATE DIMs.PrecedenceConstraints[Constraint]"
-          TopLeft="128.08571496539,61.6588233330155">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.411764675719"
-              Start="0,0"
-              End="0,26.911764675719">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.911764675719" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="60.5428578286147,77.4117644592141" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -9145,7 +7314,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
     design-time-name="Package\CREATE DIMs\DIM_Geography">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\CREATE DIMs\DIM_Geography\OLE DB Source"
@@ -9177,9 +7346,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9213,9 +7380,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9234,160 +7399,8 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\CREATE DIMs\DIM_Lifestyle">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source"
-          TopLeft="232.999996528029,268.999995991588" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\CREATE DIMs\DIM_Lifestyle\Sort"
-          TopLeft="679.571417739501,402.294111866904" />
-        <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\CREATE DIMs\DIM_Lifestyle\Lookup"
-          TopLeft="725.999989181757,260.999996110797" />
-        <NodeLayout
-          Size="140,41.6"
-          Id="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle"
-          TopLeft="375.999994397164,422.999993696809" />
-        <EdgeLayout
-          Id="Package\CREATE DIMs\DIM_Lifestyle.Paths[Sort Output]"
-          TopLeft="679.571417739501,423.094111866904">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-163.571423342337,20.7058818299051"
-              Start="0,0"
-              End="-156.071423342337,20.7058818299051">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-77.7857116711685,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-77.7857116711685,0"
-                    Point2="-81.7857116711685,0"
-                    Point3="-81.7857116711685,4" />
-                  <mssgle:LineSegment
-                    End="-81.7857116711685,16.7058818299051" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-81.7857116711685,16.7058818299051"
-                    Point2="-81.7857116711685,20.7058818299051"
-                    Point3="-85.7857116711685,20.7058818299051" />
-                  <mssgle:LineSegment
-                    End="-156.071423342337,20.7058818299051" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CREATE DIMs\DIM_Lifestyle.Paths[Lookup Match Output]"
-          TopLeft="782.399989181757,302.599996110797">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-54.0285714422558,99.6941157561069"
-              Start="0,0"
-              End="-54.0285714422558,92.1941157561069">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.8470578780534" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,45.8470578780534"
-                    Point2="0,49.8470578780534"
-                    Point3="-4,49.8470578780534" />
-                  <mssgle:LineSegment
-                    End="-50.0285714422558,49.8470578780534" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-50.0285714422558,49.8470578780534"
-                    Point2="-54.0285714422558,49.8470578780534"
-                    Point3="-54.0285714422558,53.8470578780534" />
-                  <mssgle:LineSegment
-                    End="-54.0285714422558,92.1941157561069" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-75.2056724398779,54.8470578780534,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CREATE DIMs\DIM_Lifestyle.Paths[OLE DB Source Output]"
-          TopLeft="382.599996528029,285.799996051192">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="343.399992653728,0"
-              Start="0,0"
-              End="335.899992653728,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="335.899992653728,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\CREATE DIMs\DIM_Lifestyle\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CREATE DIMs\DIM_Lifestyle\Lookup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Patient]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CREATE DIMs\DIM_Lifestyle\DIM Lifestyle">
+    design-time-name="Package\CREATE DIMs\DIM_Geography\DIM Geography">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9403,7 +7416,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
     design-time-name="Package\CREATE DIMs\DIM_Patient">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\CREATE DIMs\DIM_Patient\OLE DB Source"
@@ -9435,9 +7448,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9459,9 +7470,7 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9499,13 +7508,13 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="121.6,41.6"
-          Id="Package\CREATE FACT\Fact_Health\Lookup 1"
-          TopLeft="700.999989554286,320.999995216727" />
-        <NodeLayout
           Size="149.6,41.6"
           Id="Package\CREATE FACT\Fact_Health\OLE DB Source"
           TopLeft="132.999998018146,308.999995395541" />
+        <NodeLayout
+          Size="121.6,41.6"
+          Id="Package\CREATE FACT\Fact_Health\Lookup 1"
+          TopLeft="700.999989554286,320.999995216727" />
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\CREATE FACT\Fact_Health\OLE DB Destination"
@@ -9518,6 +7527,30 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
           Size="112.8,41.6"
           Id="Package\CREATE FACT\Fact_Health\Lookup"
           TopLeft="430.9999935776,316.999995276332" />
+        <EdgeLayout
+          Id="Package\CREATE FACT\Fact_Health.Paths[Lookup Match Output]"
+          TopLeft="543.7999935776,339.79999524653">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="157.199995976686,0"
+              Start="0,0"
+              End="149.699995976686,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="149.699995976686,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="26.658611269593,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\CREATE FACT\Fact_Health.Paths[Sort Output]"
           TopLeft="662.99999012053,495.299992929399">
@@ -9560,30 +7593,6 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CREATE FACT\Fact_Health.Paths[Lookup Match Output]"
-          TopLeft="543.7999935776,339.79999524653">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="157.199995976686,0"
-              Start="0,0"
-              End="149.699995976686,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="149.699995976686,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="26.658611269593,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9662,25 +7671,12 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\CREATE FACT\Fact_Health\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\CREATE FACT\Fact_Health\Lookup">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -9690,10 +7686,23 @@ where [refTable].[Country] = ? and [refTable].[Continent] = ? and [refTable].[He
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CREATE FACT\Fact_Health\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cf08f583-edae-480e-b671-e3922c1c58b5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a87eb8dd-a34e-41e7-a488-9fc8f838835a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Fact Health</ID>
   <Name>Fact Health</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -6,6 +6,32 @@
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2329" scrolltop="-5852" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8107" y="16531" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_Health" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3408" height="4826" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000500d0000da120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Fact_Health" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -21,15 +47,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>0</Value>
+      <Value>-2329</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>0</Value>
+      <Value>-5852</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>0</Value>
+      <Value>20</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -42,50 +68,100 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2c5d3949-7986-4bdd-94b7-5dfe8038af62">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="035a5723-08e7-4522-8443-dc42567c4c6c">
     <DataSourceViewID>OLAP</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="244341d0-97d7-4ce1-9f51-22986e402568">
+  <ErrorConfiguration dwd:design-time-name="39ad4326-1fc4-44e1-afb4-fd9e4591fd8c">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="e6509892-af28-4a6c-ae8a-e823e2864f87">
+    <Attribute dwd:design-time-name="8465a9b3-96cb-4c59-a765-eda9f0fd329a">
       <ID>Fact ID</ID>
       <Name>Fact ID</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="093b88c5-7af4-473a-a38c-94a0d9fbaf0a">
+        <KeyColumn dwd:design-time-name="d4ddbeef-bc4e-4612-83c5-b8ecd900de1a">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b6c6e3a-ed30-4e6f-ac8c-28dea2f0c264">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f8ba504-0419-4eab-b692-ef0bccbac1ac">
             <TableID>dbo_Fact_Health</TableID>
             <ColumnID>FactID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="bf0162a0-72c7-42eb-b7ec-ade1d7d122b1">
+        <AttributeRelationship dwd:design-time-name="5dfc4615-b6eb-4c9f-9055-b9e1dd39bdc7">
+          <AttributeID>Patient ID</AttributeID>
+          <Name>Patient ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ddd300af-3028-45bc-a633-7e1f8dccc21e">
           <AttributeID>Geo ID</AttributeID>
           <Name>Geo ID</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="510261c7-7674-4f0c-8429-b287fb63803c">
-          <AttributeID>Patient ID</AttributeID>
-          <Name>Patient ID</Name>
+        <AttributeRelationship dwd:design-time-name="1e027728-50cb-4950-bb50-971c9e0947bd">
+          <AttributeID>Systolic Pressure</AttributeID>
+          <Name>Systolic Pressure</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a2003ad9-f33d-4ffe-b227-9b68fde68733">
+          <AttributeID>Diastolic Pressure</AttributeID>
+          <Name>Diastolic Pressure</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="387d2712-6ff9-479b-bd6d-a186cbd95bf7">
+          <AttributeID>Cholesterol</AttributeID>
+          <Name>Cholesterol</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="45e3cd8f-aef5-453b-880c-da33cefb2db5">
+          <AttributeID>Heart Rate</AttributeID>
+          <Name>Heart Rate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b5361b63-8330-4965-9f7a-222ce8fcc3ec">
+          <AttributeID>BMI</AttributeID>
+          <Name>BMI</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ada3b2d8-33b4-4c7e-8ec1-a7578bd1c10c">
+          <AttributeID>Triglycerides</AttributeID>
+          <Name>Triglycerides</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2e0c06c0-1ed8-4d84-839c-2d4ba5f5aebe">
+          <AttributeID>Stress Level</AttributeID>
+          <Name>Stress Level</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4391a9d4-cda6-46b4-b8aa-bee5ce13f2cf">
+          <AttributeID>Heart Attack Risk</AttributeID>
+          <Name>Heart Attack Risk</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bb658bc8-064e-4e2a-a54a-f09c84f19a6b">
+    <Attribute dwd:design-time-name="f08cb7d4-7d70-46d2-a518-a8a2f5fe62f8">
+      <ID>Patient ID</ID>
+      <Name>Patient ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9f6d4e37-1564-4448-bb23-b61d020597f5">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1f86de9-7df6-4e25-80bb-cf1b2cd7abb8">
+            <TableID>dbo_Fact_Health</TableID>
+            <ColumnID>PatientID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="29e87db7-b90d-4c88-8de1-05af898a62e9">
       <ID>Geo ID</ID>
       <Name>Geo ID</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cac5580f-22da-4619-8bb2-ca669b71054f">
+        <KeyColumn dwd:design-time-name="501a9ace-fe04-42f3-810f-f651fcf41c43">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="741f8f79-7ffe-42e2-9db4-770a3164ef64">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c5dee43e-f5c4-4ae7-aaf5-c54dc3b104af">
             <TableID>dbo_Fact_Health</TableID>
             <ColumnID>GeoID</ColumnID>
           </Source>
@@ -96,21 +172,123 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1b11a2af-5ec8-40b7-bf19-2c31dfd1a953">
-      <ID>Patient ID</ID>
-      <Name>Patient ID</Name>
+    <Attribute dwd:design-time-name="b171be18-520c-4cae-a6fc-a9f4b5316e67">
+      <ID>Systolic Pressure</ID>
+      <Name>Systolic Pressure</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ac5e135c-d2b7-423f-9774-782296dba39b">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c4f6bd7-bc73-4ce9-9385-b47c82887693">
+        <KeyColumn dwd:design-time-name="cede51e5-4fa8-4276-b225-aa44a093bf1d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f85e39ce-7e48-4075-9e20-2044454c60cf">
             <TableID>dbo_Fact_Health</TableID>
-            <ColumnID>PatientID</ColumnID>
+            <ColumnID>SystolicPressure</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d0c4d432-1edb-4feb-b3f1-501c208eb9e9">
+      <ID>Diastolic Pressure</ID>
+      <Name>Diastolic Pressure</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6c9f7d9b-18b5-4e8c-9ee7-d6b6122d1a20">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="665612a6-5d51-46a3-8baf-8457c4a072b5">
+            <TableID>dbo_Fact_Health</TableID>
+            <ColumnID>DiastolicPressure</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="64b1ad7a-30b2-43c9-8e9c-8b90c7b084c3">
+      <ID>Cholesterol</ID>
+      <Name>Cholesterol</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bbe1a45c-bf61-4dd7-a362-f081e96eddb0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea6fa7af-c597-4468-a93e-9cc98f867649">
+            <TableID>dbo_Fact_Health</TableID>
+            <ColumnID>Cholesterol</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="967b9ffd-53ad-4e2e-acf9-30901a5863f4">
+      <ID>Heart Rate</ID>
+      <Name>Heart Rate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46292624-e03e-4d1c-888d-d0f34733391f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19052b4c-6126-4af3-bc0d-b73275827f5b">
+            <TableID>dbo_Fact_Health</TableID>
+            <ColumnID>HeartRate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5e8c11ba-0d55-403a-b3e7-bce456af7982">
+      <ID>BMI</ID>
+      <Name>BMI</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6834ddd2-d905-43e7-93ad-12d5c2691663">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9be3db02-083c-43eb-9830-cb7fbb39ff18">
+            <TableID>dbo_Fact_Health</TableID>
+            <ColumnID>BMI</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="83da449a-05de-4822-a22e-a77515775626">
+      <ID>Triglycerides</ID>
+      <Name>Triglycerides</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="34c24695-10c4-460a-ae78-86ba7254e58a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ddeb7cd3-a3d9-4b25-9e24-5f82b6c55995">
+            <TableID>dbo_Fact_Health</TableID>
+            <ColumnID>Triglycerides</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a4ccad7c-320b-4f54-bc43-3cf4a59c0a31">
+      <ID>Stress Level</ID>
+      <Name>Stress Level</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fd8f493e-36be-4b56-8130-acb73b849a2c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cad0dfc5-36de-483c-b858-38083b85c27f">
+            <TableID>dbo_Fact_Health</TableID>
+            <ColumnID>StressLevel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6df6b7e9-a318-4170-85a8-cf88a8f1deed">
+      <ID>Heart Attack Risk</ID>
+      <Name>Heart Attack Risk</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="212dd768-ebf3-401e-ae8e-8a2dcccc19c8">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab3ef922-5dfe-4234-8939-3fcf60c62ad8">
+            <TableID>dbo_Fact_Health</TableID>
+            <ColumnID>HeartAttackRisk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

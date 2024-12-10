@@ -20,12 +20,12 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Geo.dim</Name>
-      <FullPath>Geo.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Patient.dim</Name>
       <FullPath>Patient.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Geo.dim</Name>
+      <FullPath>Geo.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Fact Health.dim</Name>
