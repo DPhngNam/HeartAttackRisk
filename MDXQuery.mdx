@@ -85,16 +85,28 @@ FROM
 --9.
 SELECT 
     [Fact Health].[Stress Level].Members ON COLUMNS, 
-    [Patient].[Sex].Members 
-	having (
-		[Measures].[Stress Level] = 1
-	) ON ROWS
+    [Patient].[Sex].Members ON ROWS
 FROM 
     [OLAP]
-
+WHERE ([Measures].[Heart Attack Risk Count])
 --10.
 SELECT 
     [Measures].[Heart Attack Risk Count] on rows,
 	[Fact Health].[Sleep Hours Per Day].Members on columns
 FROM 
     [OLAP]
+
+-- COuntry Heart Attack by country and smoking
+SELECT 
+	[Geo].[Country].Members on rows,
+	[Patient].[Smoking].Members on columns
+from [OLAP]
+
+--average excercise hour by continent and sex
+
+SELECT 
+{ [Sex].[Male], [Sex].[Female] } ON COLUMNS, 
+[Geo].[Continent].MEMBERS ON ROWS 
+FROM [OLAP]
+WHERE ([Measures].[Average ExerciseHoursPerWeek])
+
