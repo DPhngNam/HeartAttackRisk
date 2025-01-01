@@ -66,3 +66,8 @@ CREATE TABLE RawData (
     StressLevel INT NOT NULL,
     HeartAttackRisk BIT NOT NULL,
 );
+
+DELETE FROM RawData;
+DELETE FROM Fact_Health;
+DELETE FROM Geo;
+DELETE FROM Patient;

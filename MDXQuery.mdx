@@ -1,9 +1,10 @@
+//1. Pivot
 SELECT 
-    [Geo].[Continent].Members ON ROWS, 
-    [Measures].[Average BMI] ON COLUMNS
+    {[Measures].[Average BMI], [Measures].[Average HeartRate]} ON COLUMNS, 
+    [Geo].[Continent].Members ON ROWS
 FROM 
     [OLAP];
-
+//2. Filter
 SELECT 
     [Geo].[Country].Members ON ROWS, 
     [Measures].[Average HeartRate] ON COLUMNS
@@ -11,35 +12,24 @@ FROM
     [OLAP]
 WHERE 
     [Geo].[Continent].[Asia];
---3.Slice Query
+//3
 SELECT 
     [Geo].[Continent].Members ON ROWS, 
-    {[Measures].[StressLevel], [Measures].[SleepHoursPerDay]} ON COLUMNS
+    {[Measures].[Stress Level], [Measures].[Sleep Hours Per Day]} ON COLUMNS
 FROM 
     [OLAP];
-
-
---4.Dice Query 
-
-
-//5.Pivot Query
-SELECT 
-    [Geo].[Continent].Members ON ROWS, 
-    {[Measures].[BMI], [Measures].[Stress Level]} ON COLUMNS
-FROM 
-    [OLAP];
-
-//6.Generate
+//4.DRILL-DOWN Query
 SELECT 
     GENERATE(
-        [Geo].[Continent].Members, 
-        {[Geo].[Continent].CURRENTMEMBER}
+        [Geo].[Continent].MEMBERS, 
+        {[Geo].[Continent].CURRENTMEMBER, 
+         [Geo].[Continent].CURRENTMEMBER.CHILDREN}
     ) ON ROWS, 
-    [Measures].[Average BMI] ON COLUMNS
+    {[Measures].[BMI], [Measures].[Stress Level]} ON COLUMNS
 FROM 
     [OLAP]
 
-//7.TOPCOUNT Function
+//5.FILTER Query
 SELECT 
     TOPCOUNT(
         [Geo].[Country].Members, 
@@ -50,15 +40,15 @@ SELECT
 FROM 
     [OLAP];
 
-//8.HAVING Clause
+//6 Roll up
 SELECT 
-    [Geo].[Country].Members 
-	HAVING [Measures].[Average BMI] > 29 ON ROWS, 
-    [Measures].[Average BMI] ON COLUMNS
+    {[Measures].[Average BMI], [Measures].[Average HeartRate]} ON COLUMNS, 
+    DrillUpLevel([Geo].[Country].Members, [Geo].[Country].Levels(0)) ON ROWS
 FROM 
     [OLAP]
-
- -- 10.Using FILTER
+WHERE 
+    [Geo].[Continent].Members;
+//7
 SELECT 
     FILTER(
         [Geo].[Country].Members, 
@@ -70,19 +60,13 @@ FROM
 WHERE 
     [Geo].[Continent].[Asia];
 
--- 7. HeartAttackRisks & Family History
+//8
 SELECT 
     [Patient].[Family History].Members ON ROWS, 
     [Measures].[Heart Attack Risk Count] ON COLUMNS
 FROM 
     [OLAP]
--- 8.
-SELECT 
-    [Patient].[Diabetes].Members ON ROWS, 
-    [Measures].[Heart Attack Risk Count] ON COLUMNS
-FROM 
-    [OLAP]
---9.
+//9
 SELECT 
     [Fact Health].[Stress Level].Members ON COLUMNS, 
     [Patient].[Sex].Members ON ROWS
@@ -90,23 +74,9 @@ FROM
     [OLAP]
 WHERE ([Measures].[Heart Attack Risk Count])
 --10.
-SELECT 
-    [Measures].[Heart Attack Risk Count] on rows,
-	[Fact Health].[Sleep Hours Per Day].Members on columns
-FROM 
-    [OLAP]
-
--- COuntry Heart Attack by country and smoking
-SELECT 
-	[Geo].[Country].Members on rows,
-	[Patient].[Smoking].Members on columns
-from [OLAP]
-
 --average excercise hour by continent and sex
-
 SELECT 
 { [Sex].[Male], [Sex].[Female] } ON COLUMNS, 
 [Geo].[Continent].MEMBERS ON ROWS 
 FROM [OLAP]
 WHERE ([Measures].[Average ExerciseHoursPerWeek])
-

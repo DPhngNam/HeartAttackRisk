@@ -17,6 +17,16 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>OLAP 1.cube</Name>
+      <FullPath>OLAP 1.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>OLAP 1.partitions</Name>
+          <FullPath>OLAP 1.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -31,17 +41,37 @@
       <Name>Fact Health.dim</Name>
       <FullPath>Fact Health.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Geo 1.dim</Name>
+      <FullPath>Geo 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Patient 1.dim</Name>
+      <FullPath>Patient 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Health 1.dim</Name>
+      <FullPath>Fact Health 1.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>OLAP.ds</Name>
       <FullPath>OLAP.ds</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>OLAP 1.ds</Name>
+      <FullPath>OLAP 1.ds</FullPath>
+    </ProjectItem>
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
       <Name>OLAP.dsv</Name>
       <FullPath>OLAP.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OLAP 1.dsv</Name>
+      <FullPath>OLAP 1.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -54,11 +84,21 @@
             <Name>OLAP</Name>
             <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=DESKTOP-6A6P54K\MSSQLANALYSIS;Integrated Security=SSPI;Initial Catalog=OLAP</Value>
           </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>OLAP 1</Id>
+            <Name>OLAP 1</Name>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=DESKTOP-6A6P54K\MSSQLANALYSIS;Integrated Security=SSPI;Initial Catalog=OLAP</Value>
+          </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>OLAP</Id>
             <Name>OLAP</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>OLAP 1</Id>
+            <Name>OLAP 1</Name>
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
